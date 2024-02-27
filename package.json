@@ -1,0 +1,15 @@
+{
+  "name": "CV Sam",
+  "version": "1.0.0",
+  "description": "My CV",
+  "scripts": {
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.70.0",
+    "vite": "^5.1.1"
+  }
+}

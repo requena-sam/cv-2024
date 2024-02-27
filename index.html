@@ -1,266 +1,323 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="js-enabled">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Sam Requena">
-    <meta name="language" content="fr">
-    <meta name="doctype" content="HTML">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Développeur web passionné, compétent en JavaScript, HTML, CSS">
     <meta name="keywords" content="Développeur Web, HTML, CSS, JavaScript, CV, Curriculum Vitae">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/scss/_main.scss">
     <title>Sam Requena - Développeur Web - Curriculum Vitae</title>
 </head>
 <body>
-<header>
-    <h1><a href="#">Sam Requena</a></h1>
-    <nav>
-        <h2>Navigation principale</h2>
-        <ul>
+<header role="banner">
+    <h1 role="heading"><a href="#">Sam Requena</a></h1>
+    <nav role="navigation">
+        <h2 role="heading" class="hidden">Navigation principale</h2>
+        <ul role="list">
             <li>
-                <a href="#parcours">Parcours</a>
+                <a href="#parcours" title="Vers la section de parcours">Parcours</a>
             </li>
             <li>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#portfolio" title="Vers la section de portfolio">Portfolio</a>
             </li>
             <li>
-                <a href="#about">À propos de moi</a>
+                <a href="#about" title="Vers la section d'a propos">À propos de moi</a>
             </li>
             <li>
-                <a href="#skills">Compétences</a>
+                <a href="#skills" title="Vers la section de compétences">Compétences</a>
             </li>
         </ul>
         <ul>
             <li>
-                <a href="#reseaux">Mes Réseaux</a>
+                <a href="#social" title="Vers la section de mes réseaux">Mes Réseaux</a>
             </li>
             <li>
-                <a href="#">Contacter</a>
+                <a href="#formContact" title="Vers la section de contact">Contacter</a>
             </li>
         </ul>
     </nav>
 </header>
-<main>
-    <section id="home">
-        <h2>Sam Requena <span>Web Developper</span></h2>
-        <p>Aspirant développeur web passionné par la création d&apos;expériences numériques captivantes. Fort d&apos;une
-            formation
-            académique solide et d&apos;une volonté d&apos;apprendre constante, je suis prêt à contribuer à des projets
-            innovants
-            et à évoluer dans le domaine du développement web.</p>
-        <p class="cta"><a href="#">Contacter</a></p>
-        <img src="src/img/IMG_1247.JPG" alt="photo Sam Requena" title="Photo de Sam Requena">
-        <p>Une façon de travailler qui plait au clients</p>
-        <p><a href="#">En apprendre d’avantages sur mes clients</a></p>
+<main role="main">
+    <!-- Section de grille de 2 colonnes -->
+    <section id="home" class="home">
+        <div class="home__colonne1">
+            <div class="home__colonne1__image">
+                <img
+                        src="src/img/IMG_1247.JPG"
+                        alt="photo Sam Requena"
+                        title="Photo de Sam Requena"
+                        width="2048"
+                        height="1356">
+            </div>
+            <span>Une façon de travailler qui plait au clients</span>
+            <a href="#" class="action_link">En apprendre d’avantages sur mes clients</a>
+        </div>
+        <div class="home__colonne2">
+            <h2 role="heading" aria-level="2" class="home__colonne2__title">Sam Requena
+                <span>Web Developper</span>
+            </h2>
+            <p class="home__colonne2__text">
+                Aspirant développeur web passionné par la création d&apos;expériences numériques captivantes. Fort d&apos;une
+                formation académique solide et d&apos;une volonté d&apos;apprendre constante, je suis prêt à contribuer
+                à des projets innovants et à évoluer dans le domaine du développement web.
+            </p>
+            <a href="#" class="cta">Contacter</a>
+        </div>
     </section>
-    <section id="parcours">
-        <h2>Mon parcours <span>Diplômes</span></h2>
-        <img src="src/img/62ee86ad629f1872424dab04_man-suit-portfolio.svg"
-             alt="Illustration d&apos;un personnage qui marche">
-        <p><a href="#">Mes compétences apprises</a></p>
+    <!-- Exemple pour le scss -->
+    <section id="parcours" class="parcours">
+        <div class="parcours__intro">
+            <h2 role="heading" aria-level="2" class="parcours__intro__title">Mon parcours
+                <span>Diplômes</span>
+            </h2>
+            <img
+                    src="src/img/62ee86ad629f1872424dab04_man-suit-portfolio.svg"
+                    alt="Illustration d'un personnage qui marche"
+                    class="parcours__intro__img">
+            <a href="#" class="parcours__intro__link">Mes compétences apprises</a>
+        </div>
         <article class="parcours__card">
-            <h3>Bachelier en techniques graphiques orientation - Web<span>Haute - Ecole de la Province de Liège</span>
+            <h3 class="parcours__card__title">Bachelier en techniques graphiques orientation - Web
+                <span>Haute - Ecole de la Province de Liège</span>
             </h3>
-            <p class="parcours__card__desc">
+            <p class="parcours__card__text">
                 Apprentissages du design web et de ses langages de codes, l&apos;utilisation de divers frameworks et
-                gestion
-                de bases de données
+                gestion de bases de données
             </p>
         </article>
         <article class="parcours__card">
-            <h3>Bachelier en Écriture Multimédia <span>Haute - Ecole de la Province de Liège</span></h3>
-            <p class="parcours__card__desc">
-                Apprentissages dans le domaine de l&apos;UX mais également dans la prise de vues de photos et vidéos
-                ainsi
-                que leurs retouches et montages
-            </p>
-        </article>
-        <article class="parcours__card">
-            <h3>Formation secondaire - option sciences et
-                mathématiques<span> Etablissement secondaire St - Roch Theux</span>
+            <h3 class="parcours__card__title">Bachelier en Écriture Multimédia
+                <span>Haute - Ecole de la Province de Liège</span>
             </h3>
-            <p class="parcours__card__desc">
+            <p class="parcours__card__text">
+                Apprentissages dans le domaine de l&apos;UX mais également dans la prise de vues de photos et vidéos
+                ainsi que leurs retouches et montages
+            </p>
+        </article>
+        <article class="parcours__card">
+            <h3 class="parcours__card__title">Formation secondaire - option sciences et mathématiques
+                <span> Etablissement secondaire St - Roch Theux</span>
+            </h3>
+            <p class="parcours__card__text">
                 Apprentissages approfondis des sciences en général ainsi qu&apos;une pratique des mathématiques
-                récurrentes qui
-                m&apos;ont
-                permis de travailler ma logique.
+                récurrentes qui m&apos;ont permis de travailler ma logique.
             </p>
         </article>
     </section>
     <section id="portfolio">
-        <h2>Mon portfolio <span>Découvrez tous mes projets</span></h2>
-        <p>Découvrez l&apos;étendue de mon parcours professionnel à travers la section dédiée à 'Mon Portfolio'. Cette
-            galerie
-            exhaustive offre un aperçu détaillé de mes compétences, réalisations et projets marquants, reflétant ainsi
-            mon engagement</p>
-        <p class="cta"><a href="#">On y va !</a></p>
-        <figure>
-            <img src="#" alt="Capture d&apos;écran de mon portfolio" title="Capture d&apos;écran de mon portfolio">
-        </figure>
+        <div class="portfolio__content">
+            <h2 role="heading" aria-level="2" class="portfolio__content__title">Mon portfolio
+                <span>Découvrez tous mes projets</span>
+            </h2>
+            <p class="portfolio__content__text">
+                Découvrez l&apos;étendue de mon parcours professionnel à travers la section dédiée à
+                'Mon Portfolio'. Cette galerie exhaustive offre un aperçu détaillé de mes compétences, réalisations et
+                projets marquants, reflétant ainsi mon engagement
+            </p>
+            <a class="cta portfolio__content__cta" href="#">On y va !</a>
+        </div>
+        <img
+                src="#"
+                alt="Capture d'écran de mon portfolio"
+                title="Capture d'écran de mon portfolio"
+                class="portfolio__img">
     </section>
     <section id="about">
-        <h2>A propos de moi <span>La qualité de mon travail</span></h2>
-        <p>Retrouvez la citation qui dicte ma façon de travailler ainsi que d’un retour client et de statistique lié son
-            projet.</p>
-        <blockquote>Lorsque mes clients choisissent mes services, je m'engage à assurer leur entière satisfaction. Je
-            considère chaque retour client comme essentiel. Un client satisfait est un ambassadeur potentiel, prêt à
-            recommander mes services avec confiance et fiabilité.
-        </blockquote>
-        <figure>
-            <img src="./src/img/about_me.png" alt="Photo de Sam Requena" title="Photo de Sam Requena">
-        </figure>
-        <div class="about__client_avis">
-            <img src="./src/img/client.webp" alt="Photo de profil d'un client" title="Photo de profil d'un client">
-            <p>“Bon travail, mon site m’as permis de mieux me développer et également générer beaucoup plus de
-                revenus.”</p>
-            <p class="about__client_name">Tom Martin <span>client</span></p>
+        <h2 role="heading" aria-level="2" class="about__title">A propos de moi
+            <span>La qualité de mon travail</span>
+        </h2>
+        <p class="about__text">
+            Retrouvez la citation qui dicte ma façon de travailler ainsi que d’un retour client et de statistique lié
+            son projet.
+        </p>
+        <div class="about__grid">
+            <div class="about__grid__citation">
+                <p>
+                    "Lorsque mes clients choisissent mes services, je m'engage à assurer leur entière satisfaction. Je
+                    considère chaque retour client comme essentiel. Un client satisfait est un ambassadeur potentiel,
+                    prêt à
+                    recommander mes services avec confiance et fiabilité."
+                </p>
+                <cite>Sam Requena</cite>
+                <span>Web Developper</span>
+            </div>
+            <div class="about__grid__me">
+                <img src="src/img/about_me.png" alt="Photo de Sam Requena" title="Photo de Sam Requena">
+            </div>
+            <div class="about__grid__client">
+                <img src="src/img/client.webp" alt="Photo de profil d'un client" title="Photo de profil d'un client">
+                <blockquote>
+                    “Bon travail, mon site m’as permis de mieux me développer et également générer beaucoup plus de
+                    revenus.”
+                    <cite>Tom Martin</cite>
+                    <span>client</span>
+                </blockquote>
+            </div>
+            <div class="about__grid__stats">
+                <dl role="list">
+                    <dt>Prise de contact avec de nouveaux clients</dt>
+                    <dd>41&percnt;</dd>
+                    <dt>Bénéfice sur l’année</dt>
+                    <dd>12&percnt;</dd>
+                </dl>
+            </div>
         </div>
-        <dl>
-            <dt>Prise de contact avec de nouveaux clients</dt>
-            <dd>41&percnt;</dd>
-            <dt>Bénéfice sur l’année</dt>
-            <dd>12&percnt;</dd>
-        </dl>
-        <p>Vous avez des questions ?</p>
+        <p>Vous avez des questions&nbsp;?</p>
         <p><a href="#">En savoir plus sur moi</a></p>
     </section>
     <section id="skills">
-        <h2>Mes compétences <span>Ce que je peux apporter</span></h2>
-        <p>Découvrez mes compétences acquises lors de mon parcours scolaire ainsi que dans ma vie professionel.</p>
-        <!--    Ajout SVG-->
-        <article class="skills__items">
-            <h3>Maitrise des langages essentielles du web</h3>
-            <p>
-                Connaisances en HTML, SASS, JavaScript, SQL et PHP, je maîtrise les langages clés du développement web,
-                permettant la création efficace de pages structurées, de style optimisé, du développement front-end
-                interactif, de la gestion de bases de données, et de la création d'applications web dynamiques.
-            </p>
-        </article>
-        <article class="skills__items">
-            <h3>Conception web</h3>
-            <p>
-                Je maitrise le concepts fondamentaux du design web comme l’ergonomie, la couleurs, la typographie et la
-                mise en page, je me considère comme un bon créatif maîtrisant les outils tels que Photoshop, Illustrator
-                ou encore Figma;
-            </p>
-        </article>
-        <article class="skills__items">
-            <h3 lang="en">>Soft skills</h3>
-            <p>
-                Doté de solides soft skills, je facilite la collaboration grâce à une communication claire et une
-                adaptabilité rapide. Ma créativité et mon sens de l'écoute renforcent les relations professionnelles,
-                favorisant une approche collaborative et orientée résultats.
-            </p>
-        </article>
-        <article class="skills__items">
-            <h3>Adaptabilité</h3>
-            <p>
-                Adaptabilité rapide et efficace face aux changements, je m'intègre aisément dans des environnements
-                dynamiques, assurant ainsi une contribution agile et proactive aux projets.
-            </p>
-        </article>
-        <p><a href="#parcours">Revoir mon parcours juste ici !</a></p>
+        <div class="skills__colonne1">
+            <h2 role="heading" aria-level="2" class="skills__colonne1__title">Mes compétences
+                <span>Ce que je peux apporter</span>
+            </h2>
+            <p>Découvrez mes compétences acquises lors de mon parcours scolaire ainsi que dans ma vie professionel.</p>
+            <!--    Ajout SVG-->
+        </div>
+        <div class="skills__colonne2">
+            <article class="skills__colonne2__items">
+                <h3 class="skills__colonne2__title">Maitrise des langages essentielles du web</h3>
+                <p class="skills__colonne2__text">
+                    Connaisances en HTML, SASS, JavaScript, SQL et PHP, je maîtrise les langages clés du développement
+                    web,
+                    permettant la création efficace de pages structurées, de style optimisé, du développement front-end
+                    interactif, de la gestion de bases de données, et de la création d'applications web dynamiques.
+                </p>
+            </article>
+            <article class="skills__colonne2__items">
+                <h3 class="skills__colonne2__title">Conception web</h3>
+                <p class="skills__colonne2__text">
+                    Je maitrise le concepts fondamentaux du design web comme l’ergonomie, la couleurs, la typographie et
+                    la
+                    mise en page, je me considère comme un bon créatif maîtrisant les outils tels que Photoshop,
+                    Illustrator
+                    ou encore Figma;
+                </p>
+            </article>
+            <article class="skills__colonne2__items">
+                <h3 class="skills__colonne2__title" lang="en">>Soft skills</h3>
+                <p class="skills__colonne2__text">
+                    Doté de solides soft skills, je facilite la collaboration grâce à une communication claire et une
+                    adaptabilité rapide. Ma créativité et mon sens de l'écoute renforcent les relations
+                    professionnelles,
+                    favorisant une approche collaborative et orientée résultats.
+                </p>
+            </article>
+            <article class="skills__colonne2__items">
+                <h3 class="skills__colonne2__title">Adaptabilité</h3>
+                <p class="skills__colonne2__text">
+                    Adaptabilité rapide et efficace face aux changements, je m'intègre aisément dans des environnements
+                    dynamiques, assurant ainsi une contribution agile et proactive aux projets.
+                </p>
+            </article>
+            <p><a href="#parcours">Revoir mon parcours juste ici !</a></p>
+        </div>
     </section>
     <section class="avis">
-        <h2>Avis sur mon travail <span>3 avis de clients</span></h2>
-        <p>Voici quelques retours desclients pour qui j’ai pu travailler</p>
-        <p>que disent ils ?</p>
+        <h2 role="heading" aria-level="2" class="avis__title">Avis sur mon travail
+            <span>3 avis de clients</span>
+        </h2>
+        <p class="avis__description">Voici quelques retours des clients pour qui j’ai pu travailler</p>
+        <p>que disent ils&nbsp;?</p>
         <article class="avis__item">
-            <h2>Avis1</h2>
-            <p>“Sam a dépassé nos attentes avec le design de notre boutique en ligne. Le site capture parfaitement
+            <h2 role="heading" aria-level="2" class="avis__item__title">Avis1</h2>
+            <p class="avis__item__text">“Sam a dépassé nos attentes avec le design de notre boutique en ligne. Le site
+                capture parfaitement
                 l'essence de notre artisanat, offrant une expérience visuelle captivante. Grâce à son expertise, notre
                 boutique en ligne est maintenant moderne et attire l'attention de nos clients. Merci à Sam pour son
-                dévouement et son professionnalisme exceptionnels !”</p>
-            <p>Frédéric Dubois <span>Electricien indépendant</span></p>
+                dévouement et son professionnalisme exceptionnels !”
+            </p>
+            <p class="avis__item__client">Frédéric Dubois <span>Electricien indépendant</span></p>
         </article>
         <article class="avis__item">
-            <h2>Avis2</h2>
-            <p>“Il a créé un site web exceptionnel pour moi en tant que photographe. Il a capturé parfaitement
-                l'esthétique de mon travail, offrant une présentation visuelle saisissante. Le site est simple, élégant,
-                et met en valeur mon portfolio de manière percutante. Très satisfait de la collaboration avec Sam pour
-                un résultat professionnel et esthétiquement plaisant.”</p>
-            <p>Luca Roberty <span>Photographe</span></p>
+            <h2 role="heading" aria-level="2" class="avis__item__title">Avis2</h2>
+            <p class="avis__item__text">“Il a créé un site web exceptionnel pour moi en tant que photographe. Il a
+                capturé parfaitement l'esthétique de mon travail, offrant une présentation visuelle saisissante. Le site
+                est simple, élégant, et met en valeur mon portfolio de manière percutante. Très satisfait de la
+                collaboration avec Sam pour un résultat professionnel et esthétiquement plaisant.”
+            </p>
+            <p class="avis__item__client">Luca Roberty <span>Photographe</span></p>
         </article>
         <article class="avis__item">
-            <h2>Avis3</h2>
-            <p>“Un grand merci à Sam pour avoir transformé notre approche des commandes en ligne. Le site web de notre
-                restaurant est maintenant plus convivial grâce à sa conception intuitive et à ses fonctionnalités
-                pratiques. Sam a su répondre rapidement à nos besoins spécifiques, rendant le processus agréable. Nous
-                recommandons vivement Sam pour toute entreprise cherchant à améliorer sa présence en ligne.”</p>
-            <p>Chenghao Pan <span>Restaurateur</span></p>
+            <h2 role="heading" aria-level="2" class="avis__item__title">Avis3</h2>
+            <p class="avis__item__text">“Un grand merci à Sam pour avoir transformé notre approche des commandes en
+                ligne. Le site web de notre restaurant est maintenant plus convivial grâce à sa conception intuitive et
+                à ses fonctionnalités pratiques. Sam a su répondre rapidement à nos besoins spécifiques, rendant le
+                processus agréable. Nous recommandons vivement Sam pour toute entreprise cherchant à améliorer sa
+                présence en ligne.”
+            </p>
+            <p class="avis__item__client">Chenghao Pan <span>Restaurateur</span></p>
         </article>
-        <div class="alert_portfolio">
-            <h2>Retrouve les projets dans mon portfolio </h2>
-            <p>Une grande partie de mes projets on des retours positif et je vous invite à les découvrir</p>
-            <p><a href="#portfolio">Y aller</a></p>
+        <div class="info">
+            <div class="info__left">
+                <h2 role="heading" class="info__left__title">Retrouve les projets dans mon portfolio </h2>
+                <p>Une grande partie de mes projets on des retours positif et je vous invite à les découvrir</p>
+                <a href="#portfolio" class="cta info__left__cta">Y aller</a>
+            </div>
             <img src="./src/img/alerte_portfolio.webp" alt="Illustration d'un personnage"
                  title="Illustation d'un personnage">
         </div>
     </section>
-    <section id="contact">
-        <h2>Me contacter <span>Formulaire</span></h2>
-        <p>Si vous souhaitez me poser une question ou me contacter afin qu’on puisse travailler sur un de vos
-            projets, n’hésitez pas à me contacter via ce formulaire.</p>
-        <img src="#" alt="Illustration">
-        <div class="contact__formulaire">
-            <form action="/" method="post">
-                <fieldset>
-                    <div class="firstname">
-                        <label for="firstname">Prénom</label>
-                        <input type="text" name="firstname" id="firstname" placeholder="Prénom">
-                    </div>
-                    <div class="nom">
-                        <label for="name">Nom</label>
-                        <input type="text" name="name" id="name" placeholder="Nom">
-                    </div>
-                    <div class="email">
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email" placeholder="Email">
-                    </div>
-                    <div class="phone_number">
-                        <label for="number">Nom</label>
-                        <input type="text" name="number" id="number" placeholder="0471.01.01.01">
-                    </div>
-                    <div class="budget">
-                        <label for="budget">Budget</label>
-                        <select name="budget" id="budget">
-                            <option value="default" disabled selected>Choisir mon budget</option>
-                            <option value="under_5000">En dessous de 3.000€</option>
-                            <option value="3000_5000">Entre 3.000€ et 5.000€</option>
-                            <option value="5000_10000">Entre 5.000€ et 10.000€</option>
-                            <option value="more_10000">Plus de 10.000€</option>
-                            <option value="no_mention">Ne pas mentionner pour l'instant</option>
-                        </select>
-                    </div>
-                    <div class="message">
-                        <label for="message">Que voulez-vous me communiquer ?</label>
-                        <textarea name="message" id="message" cols="40" rows="1"></textarea>
-                    </div>
-                    <button type="submit">Envoyer</button>
-                </fieldset>
-            </form>
-            <p>Envie de voir de quoi je suis capable ?</p>
-            <p><a href="#"></a>Aller voir mon portfolio</p>
-        </div>
-        <div class="contact__footer">
-            <p>&copy; Curriculum Vitae</p>
-            <ul>
-                <li>
-                    <a href="#">Accueil</a>
-                </li>
-                <li>
-                    <a href="#">Sam</a>
-                </li>
-
-                <li>
-                    <a href="#">Requena</a>
-                </li>
-            </ul>
+    <section id="contact" class="contact">
+        <span>fermer</span>
+        <div class="contact__grid">
+            <div class="contact__grid__description">
+                <h2>Me contacter
+                    <span>Formulaire</span>
+                </h2>
+                <p>Si vous souhaitez me poser une question ou me contacter afin qu’on puisse travailler sur un de vos
+                    projets, n’hésitez pas à me contacter via ce formulaire.
+                </p>
+                <img src="#" alt="Illustration">
+            </div>
+            <div class="contact__grid__formulaire">
+                <form action="#formContact" method="post" id="formContact">
+                    <fieldset>
+                        <div class="contact__grid__formulaire__firstname">
+                            <label for="firstname">Prénom</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Prénom" autocomplete>
+                        </div>
+                        <div class="contact__grid__formulaire__name">
+                            <label for="name">Nom</label>
+                            <input type="text" name="name" id="name" placeholder="Nom" autocomplete>
+                        </div>
+                        <div class="contact__grid__formulaire__email">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" placeholder="Email" autocomplete>
+                        </div>
+                        <div class="contact__grid__formulaire__phone_number">
+                            <label for="number">Nom</label>
+                            <input type="tel" name="number" id="number" placeholder="+ 32 (0)472 86 02 18" autocomplete>
+                        </div>
+                        <div class="contact__grid__formulaire__budget">
+                            <label for="budget">Budget</label>
+                            <select name="budget" id="budget">
+                                <option value="default" disabled selected>Choisir mon budget</option>
+                                <option value="-3000">En dessous de 3.000€</option>
+                                <option value="3000__5000">Entre 3.000€ et 5.000€</option>
+                                <option value="5000__10000">Entre 5.000€ et 10.000€</option>
+                                <option value="+10000">Plus de 10.000€</option>
+                                <option value="no__mention">Ne pas mentionner pour l'instant</option>
+                            </select>
+                        </div>
+                        <div class="contact__grid__formulaire__message">
+                            <label for="message">Que voulez-vous me communiquer&nbsp;?</label>
+                            <textarea name="message" id="message" cols="40" rows="3"
+                                      placeholder="Inscrivez votre message"></textarea>
+                        </div>
+                        <button type="submit">Envoyer</button>
+                    </fieldset>
+                </form>
+                <p>Envie de voir de quoi je suis capable&nbsp;?</p>
+                <a href="#">Aller voir mon portfolio</a>
+            </div>
         </div>
     </section>
-    <footer>
+    <footer role="contentinfo">
         <section class="footer">
-            <h2>Sam Requena</h2>
-            <ul>
+            <h2 role="heading">Sam Requena</h2>
+            <ul role="list" class="footer__col1 footerList">
                 <li>
                     <a href="#">Accueil</a>
                 </li>
@@ -268,7 +325,7 @@
                     <a href="#">Portfolio</a>
                 </li>
             </ul>
-            <ul>
+            <ul role="list" class="footer__col2 footerList">
                 <li>
                     <a href="#">Mon parcours</a>
                 </li>
@@ -279,7 +336,7 @@
                     <a href="#">Mes compétences</a>
                 </li>
             </ul>
-            <ul>
+            <ul role="list" class="footer__col3 footerList">
                 <li>
                     <a href="#">Ressources</a>
                 </li>
@@ -296,7 +353,7 @@
                     <a href="#">Dash</a>
                 </li>
             </ul>
-            <ul>
+            <ul role="list" class="footer__col4 footerList">
                 <li>
                     <a href="#">Mon ordinateur</a>
                 </li>
@@ -307,12 +364,15 @@
                     <a href="#">Ma marque</a>
                 </li>
             </ul>
-            <ul>
+            <ul role="list" class="footer__col5 footerList">
                 <li>
-                    <a href="#">samrequena1510@gmail.com</a>
+                    <a href="mailto:samrequena1510@gmail.com">samrequena1510@gmail.com</a>
+                    <a href="tel:+32472860218">+ 32 (0)472 86 02 18</a>
                 </li>
             </ul>
-            <ul>
+            <!--Barre de séparation-->
+            <hr style="border: 0.01rem solid #ccc">
+            <ul role="list" class="footer__curriculum">
                 <li>
                     <a href="#">&copy; Curriculum Vitae</a>
                 </li>
@@ -324,31 +384,38 @@
                     <a href="#">Requena</a>
                 </li>
             </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="#" alt="Mon Github" title="Mon Github">
+            <ul role="list" id="social" class="footer__social">
+                <li class="footer__social__item">
+                    <a href="#" title="Vers mon site Github">
+                        <img src="#" alt="Mon Github">
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <img src="#" alt="Mon instagram" title="Mon instagram">
+                <li class="footer__social__item">
+                    <a href="#" title="Vers mon site Instagram">
+                        <img src="#" alt="Mon instagram">
                     </a>
                 </li>
             </ul>
-            <p>
-                Tous droits réservés. Aucune reproduction, distribution ou transmission du contenu de ce site n'est
-                autorisée sans permission écrite préalable.
-                Les informations présentes ici sont confidentielles et sont destinées exclusivement à un usage personnel
-                et professionnel.
-            </p>
-            <p>
-
-                Nous nous engageons à préserver la confidentialité de vos informations personnelles, telles que votre nom et votre adresse e-mail. Aucune de ces données ne sera partagée avec des tiers sans votre consentement explicite.
-            </p>
-            <p>
-                Ce site peut contenir des liens vers d'autres sites web, mais nous déclinons toute responsabilité quant à leurs pratiques de confidentialité.
-            </p>
+            <div class="footer__copyright">
+                <p class="footer__copyright__text">
+                    Tous droits réservés. Aucune reproduction, distribution ou transmission du contenu de ce site n'est
+                    autorisée sans permission écrite préalable.
+                    Les informations présentes ici sont confidentielles et sont destinées exclusivement à un usage
+                    personnel
+                    et professionnel.
+                </p>
+                <p class="footer__copyright__text">
+                    Nous nous engageons à préserver la confidentialité de vos informations personnelles, telles que
+                    votre
+                    nom et votre adresse e-mail. Aucune de ces données ne sera partagée avec des tiers sans votre
+                    consentement explicite.
+                </p>
+                <p class="footer__copyright__text">
+                    Ce site peut contenir des liens vers d'autres sites web, mais nous déclinons toute responsabilité
+                    quant
+                    à leurs pratiques de confidentialité.
+                </p>
+            </div>
         </section>
     </footer>
 </main>

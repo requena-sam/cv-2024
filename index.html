@@ -14,7 +14,7 @@
 <header role="banner">
     <h1 role="heading"><a href="#">Sam Requena</a></h1>
     <nav role="navigation">
-        <h2 role="heading" class="hidden">Navigation principale</h2>
+        <h2 role="heading" aria-level="2" class="hidden">Navigation principale</h2>
         <ul role="list">
             <li>
                 <a href="#parcours" title="Vers la section de parcours">Parcours</a>
@@ -45,7 +45,7 @@
         <div class="home__colonne1">
             <div class="home__colonne1__image">
                 <img
-                        src="src/img/IMG_1247.JPG"
+                        src="src/img/home_moi.webp"
                         alt="photo Sam Requena"
                         title="Photo de Sam Requena"
                         width="2048"
@@ -56,7 +56,7 @@
         </div>
         <div class="home__colonne2">
             <h2 role="heading" aria-level="2" class="home__colonne2__title">Sam Requena
-                <span>Web Developper</span>
+                <span lang="en">Web Developper</span>
             </h2>
             <p class="home__colonne2__text">
                 Aspirant développeur web passionné par la création d&apos;expériences numériques captivantes. Fort d&apos;une
@@ -73,13 +73,17 @@
                 <span>Diplômes</span>
             </h2>
             <img
-                    src="src/img/62ee86ad629f1872424dab04_man-suit-portfolio.svg"
+                    class="parcours__intro__img"
+                    src="src/img/alerte_portfolio.webp"
                     alt="Illustration d'un personnage qui marche"
-                    class="parcours__intro__img">
+                    title="Illustration d'un personnage qui marche"
+                    width="348"
+                    height="392">
             <a href="#" class="parcours__intro__link">Mes compétences apprises</a>
         </div>
         <article class="parcours__card">
-            <h3 class="parcours__card__title">Bachelier en techniques graphiques orientation - Web
+            <h3 role=heading aria-level="3" class="parcours__card__title">Bachelier en techniques graphiques orientation
+                - Web
                 <span>Haute - Ecole de la Province de Liège</span>
             </h3>
             <p class="parcours__card__text">
@@ -88,17 +92,19 @@
             </p>
         </article>
         <article class="parcours__card">
-            <h3 class="parcours__card__title">Bachelier en Écriture Multimédia
+            <h3 role="heading" aria-level="3" class="parcours__card__title">Bachelier en Écriture Multimédia
                 <span>Haute - Ecole de la Province de Liège</span>
             </h3>
             <p class="parcours__card__text">
-                Apprentissages dans le domaine de l&apos;UX mais également dans la prise de vues de photos et vidéos
+                Apprentissages dans le domaine de l&apos;<abbr title="User Experience">UX</abbr> mais également dans la
+                prise de vues de photos et vidéos
                 ainsi que leurs retouches et montages
             </p>
         </article>
         <article class="parcours__card">
-            <h3 class="parcours__card__title">Formation secondaire - option sciences et mathématiques
-                <span> Etablissement secondaire St - Roch Theux</span>
+            <h3 role="heading" aria-level="3" class="parcours__card__title">Formation secondaire - option sciences et
+                mathématiques
+                <span> Etablissement secondaire <abbr title="Saint">St</abbr>-Roch Theux</span>
             </h3>
             <p class="parcours__card__text">
                 Apprentissages approfondis des sciences en général ainsi qu&apos;une pratique des mathématiques
@@ -119,10 +125,13 @@
             <a class="cta portfolio__content__cta" href="#">On y va !</a>
         </div>
         <img
-                src="#"
+                class="portfolio__img"
+                src="src/img/portfolio_screen.jpg"
                 alt="Capture d'écran de mon portfolio"
                 title="Capture d'écran de mon portfolio"
-                class="portfolio__img">
+                width="1600"
+                height="1600"
+        >
     </section>
     <section id="about">
         <h2 role="heading" aria-level="2" class="about__title">A propos de moi
@@ -137,14 +146,19 @@
                 <p>
                     "Lorsque mes clients choisissent mes services, je m'engage à assurer leur entière satisfaction. Je
                     considère chaque retour client comme essentiel. Un client satisfait est un ambassadeur potentiel,
-                    prêt à
-                    recommander mes services avec confiance et fiabilité."
+                    prêt à recommander mes services avec confiance et fiabilité."
                 </p>
                 <cite>Sam Requena</cite>
                 <span>Web Developper</span>
             </div>
             <div class="about__grid__me">
-                <img src="src/img/about_me.png" alt="Photo de Sam Requena" title="Photo de Sam Requena">
+                <img
+                        src="src/img/about_moi.jpg"
+                        alt="Photo de Sam Requena"
+                        title="Photo de Sam Requena"
+                        width="3024"
+                        height="2727"
+                >
             </div>
             <div class="about__grid__client">
                 <img src="src/img/client.webp" alt="Photo de profil d'un client" title="Photo de profil d'un client">
@@ -177,35 +191,41 @@
         </div>
         <div class="skills__colonne2">
             <article class="skills__colonne2__items">
-                <h3 class="skills__colonne2__title">Maitrise des langages essentielles du web</h3>
+                <h3 role="heading" aria-level="3" class="skills__colonne2__title">
+                    Maitrise des langages essentielles du web
+                </h3>
                 <p class="skills__colonne2__text">
                     Connaisances en HTML, SASS, JavaScript, SQL et PHP, je maîtrise les langages clés du développement
-                    web,
-                    permettant la création efficace de pages structurées, de style optimisé, du développement front-end
-                    interactif, de la gestion de bases de données, et de la création d'applications web dynamiques.
+                    web, permettant la création efficace de pages structurées, de style optimisé, du développement
+                    front-end interactif, de la gestion de bases de données, et de la création d'applications web
+                    dynamiques.
                 </p>
             </article>
             <article class="skills__colonne2__items">
-                <h3 class="skills__colonne2__title">Conception web</h3>
+                <h3 role="heading" aria-level="3" class="skills__colonne2__title">
+                    Conception web
+                </h3>
                 <p class="skills__colonne2__text">
                     Je maitrise le concepts fondamentaux du design web comme l’ergonomie, la couleurs, la typographie et
-                    la
-                    mise en page, je me considère comme un bon créatif maîtrisant les outils tels que Photoshop,
-                    Illustrator
-                    ou encore Figma;
+                    la mise en page, je me considère comme un bon créatif maîtrisant les outils tels que Photoshop,
+                    Illustrator ou encore Figma;
                 </p>
             </article>
             <article class="skills__colonne2__items">
-                <h3 class="skills__colonne2__title" aria-level="3" lang="en">>Soft skills</h3>
+                <h3 role="heading" aria-level="3" class="skills__colonne2__title" lang="en">
+                    Soft skills
+
+                </h3>
                 <p class="skills__colonne2__text">
                     Doté de solides soft skills, je facilite la collaboration grâce à une communication claire et une
                     adaptabilité rapide. Ma créativité et mon sens de l'écoute renforcent les relations
-                    professionnelles,
-                    favorisant une approche collaborative et orientée résultats.
+                    professionnelles, favorisant une approche collaborative et orientée résultats.
                 </p>
             </article>
             <article class="skills__colonne2__items">
-                <h3 class="skills__colonne2__title">Adaptabilité</h3>
+                <h3 role="heading" aria-level="3" class="skills__colonne2__title">
+                    Adaptabilité
+                </h3>
                 <p class="skills__colonne2__text">
                     Adaptabilité rapide et efficace face aux changements, je m'intègre aisément dans des environnements
                     dynamiques, assurant ainsi une contribution agile et proactive aux projets.
@@ -223,10 +243,9 @@
         <article class="avis__item">
             <h2 role="heading" aria-level="2" class="avis__item__title">Avis1</h2>
             <p class="avis__item__text">“Sam a dépassé nos attentes avec le design de notre boutique en ligne. Le site
-                capture parfaitement
-                l'essence de notre artisanat, offrant une expérience visuelle captivante. Grâce à son expertise, notre
-                boutique en ligne est maintenant moderne et attire l'attention de nos clients. Merci à Sam pour son
-                dévouement et son professionnalisme exceptionnels !”
+                capture parfaitement l'essence de notre artisanat, offrant une expérience visuelle captivante. Grâce à
+                son expertise, notre boutique en ligne est maintenant moderne et attire l'attention de nos clients.
+                Merci à Sam pour son dévouement et son professionnalisme exceptionnels !”
             </p>
             <p class="avis__item__client">Frédéric Dubois <span>Electricien indépendant</span></p>
         </article>
@@ -251,25 +270,36 @@
         </article>
         <div class="info">
             <div class="info__left">
-                <h2 role="heading" class="info__left__title">Retrouve les projets dans mon portfolio </h2>
+                <h2 role="heading" aria-level="" class="info__left__title">Retrouve les projets dans mon portfolio </h2>
                 <p>Une grande partie de mes projets on des retours positif et je vous invite à les découvrir</p>
                 <a href="#portfolio" class="cta info__left__cta">Y aller</a>
             </div>
-            <img src="./src/img/alerte_portfolio.webp" alt="Illustration d'un personnage"
-                 title="Illustation d'un personnage">
+            <img src="./src/img/alerte_portfolio.webp"
+                 alt="Illustration d'un personnage"
+                 title="Illustation d'un personnage"
+                 width="348"
+                 height="392"
+            >
         </div>
     </section>
     <section id="contact" class="contact">
         <span>fermer</span>
         <div class="contact__grid">
             <div class="contact__grid__description">
-                <h2>Me contacter
+                <h2 role="heading" aria-level="2">Me contacter
                     <span>Formulaire</span>
                 </h2>
                 <p>Si vous souhaitez me poser une question ou me contacter afin qu’on puisse travailler sur un de vos
                     projets, n’hésitez pas à me contacter via ce formulaire.
                 </p>
-                <img src="#" alt="Illustration">
+                <img
+                        src="src/img/contact_illustration.webp"
+                        alt="Illustration"
+                        title="
+                        Illustration"
+                        width="592"
+                        height="592"
+                >
             </div>
             <div class="contact__grid__formulaire">
                 <form action="#formContact" method="post" id="formContact">
@@ -316,24 +346,24 @@
     </section>
     <footer role="contentinfo">
         <section class="footer">
-            <h2 role="heading">Sam Requena</h2>
+            <h2 role="heading" aria-level="2">Sam Requena</h2>
             <ul role="list" class="footer__col1 footerList">
                 <li>
-                    <a href="#">Accueil</a>
+                    <a href="#home">Accueil</a>
                 </li>
                 <li>
-                    <a href="#">Portfolio</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
             </ul>
             <ul role="list" class="footer__col2 footerList">
                 <li>
-                    <a href="#">Mon parcours</a>
+                    <a href="#parcours">Mon parcours</a>
                 </li>
                 <li>
-                    <a href="#">A propos de moi</a>
+                    <a href="#about">A propos de moi</a>
                 </li>
                 <li>
-                    <a href="#">Mes compétences</a>
+                    <a href="#skills">Mes compétences</a>
                 </li>
             </ul>
             <ul role="list" class="footer__col3 footerList">
@@ -341,32 +371,34 @@
                     <a href="#">Ressources</a>
                 </li>
                 <li>
-                    <a href="#">GTMetrix</a>
+                    <a href="https://gtmetrix.com/">GTMetrix</a>
                 </li>
                 <li>
-                    <a href="#">W3C</a>
+                    <a href="https://www.w3.org/">W3C</a>
                 </li>
                 <li>
-                    <a href="#">WEB Aim</a>
+                    <a href="https://webaim.org/">WEB Aim</a>
                 </li>
                 <li>
-                    <a href="#">Dash</a>
+                    <a href="https://kapeli.com/dash">Dash</a>
                 </li>
             </ul>
             <ul role="list" class="footer__col4 footerList">
                 <li>
-                    <a href="#">Mon ordinateur</a>
+                    <a href="https://www.apple.com/be-fr/shop/buy-mac/macbook-pro">Mon ordinateur</a>
                 </li>
                 <li>
-                    <a href="#">Mon club favoris</a>
+                    <a href="https://fr.mancity.com/">Mon club favoris</a>
                 </li>
                 <li>
-                    <a href="#">Ma marque</a>
+                    <a href="https://forever-vacation.com/">Ma marque favorite</a>
                 </li>
             </ul>
             <ul role="list" class="footer__col5 footerList">
                 <li>
                     <a href="mailto:samrequena1510@gmail.com">samrequena1510@gmail.com</a>
+                </li>
+                <li>
                     <a href="tel:+32472860218">+ 32 (0)472 86 02 18</a>
                 </li>
             </ul>
@@ -386,13 +418,19 @@
             </ul>
             <ul role="list" id="social" class="footer__social">
                 <li class="footer__social__item">
-                    <a href="#" title="Vers mon site Github">
-                        <img src="#" alt="Mon Github">
+                    <a href="https://github.com/requena-sam" title="Vers mon site Github">
+                        <img
+                                src="#"
+                                alt="Mon Github"
+                        >
                     </a>
                 </li>
                 <li class="footer__social__item">
-                    <a href="#" title="Vers mon site Instagram">
-                        <img src="#" alt="Mon instagram">
+                    <a href="https://www.instagram.com/sam_requena/" title="Vers mon site Instagram">
+                        <img
+                                src="#"
+                                alt="Mon instagram"
+                        >
                     </a>
                 </li>
             </ul>

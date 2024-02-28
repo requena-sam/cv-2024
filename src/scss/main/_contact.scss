@@ -1,0 +1,82 @@
+/* Contact section -> full page screen */
+.contact {
+
+  &__close{
+
+  }
+
+  &__container {
+
+    &__infos {
+
+      .title {
+
+      }
+
+      .text {
+
+      }
+
+      .img {
+
+      }
+    }
+  }
+
+  &__form {
+
+    fieldset {
+
+      label {
+
+      }
+
+      input {
+
+      }
+    }
+
+    &__firstname {
+
+    }
+
+    &__name {
+
+    }
+
+    &__email {
+
+    }
+
+
+    &__phoneNumber {
+
+    }
+
+    &__budget {
+
+      option {
+
+      }
+    }
+
+    &__message {
+
+      textarea {
+
+      }
+    }
+
+    button[type="submit"] {
+
+    }
+
+    &__text {
+
+    }
+
+    &__link {
+
+    }
+  }
+}

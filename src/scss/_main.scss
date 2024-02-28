@@ -1,9 +1,20 @@
+/* Site */
 
-// @import "reset";
-@import "globale";
+@import "config/reset";
+@import "config/globale";
+
+/* Header */
+@import "partials/header";
 
 /* Page principale */
-@import "parcours";
+@import "main/home";
+@import "main/parcours";
+@import "main/portfolio";
+@import "main/about";
+@import "main/skills";
+@import "main/reviews";
+@import "main/info";
+@import "main/contact";
 
 /* Footer */
-@import "footer";
+@import "partials/footer";

@@ -1,5 +1,8 @@
-body {
 
+$bg-color: #FBFCF6;
+
+body {
+  background-color: $bg-color;
 }
 
 img {
@@ -7,6 +10,10 @@ img {
   height: auto;
   object-fit: cover;
   max-width: 500px;
+}
+
+hr {
+  border: 0.01rem solid #ccc;
 }
 
 @media (min-width: 950px) {

@@ -59,25 +59,26 @@
                 En apprendre d’avantages sur mes clients
             </a>
         </div>
-        <div class="home__column2">
+        <div class="home__column2" itemscope itemtype="https://schema.org/Person">
             <h2 role="heading" aria-level="2" class="home__column2__title">
-                Sam Requena
-                <span lang="en">Web Developer</span>
+                <span itemprop="name">Sam</span> <span itemprop="familyName">Requena</span>
+                <span lang="en" class="sub_title" itemprop="jobTitle">Web Developer</span>
             </h2>
             <p class="home__column2__text">
-                Aspirant développeur web passionné par la création d&apos;expériences numériques captivantes. Fort d&apos;une
-                formation académique solide et d&apos;une volonté d&apos;apprendre constante, je suis prêt à contribuer
-                à des projets innovants et à évoluer dans le domaine du développement web.
+                <span itemprop="description">Aspirant développeur web passionné par la création d&apos;expériences numériques captivantes. Fort d&apos;une
+                    formation académique solide et d&apos;une volonté d&apos;apprendre constante, je suis prêt à
+                    contribuer
+                    à des projets innovants et à évoluer dans le domaine du développement web.</span>
             </p>
             <a href="#contact" class="cta home__column2__link" title="Vers le formulaire de contact">Contacter</a>
         </div>
     </section>
     <!-- Exemple pour le scss -->
-    <section id="parcours" class="parcours">
+    <section id="parcours" class="parcours" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
         <div class="parcours__intro">
             <h2 role="heading" aria-level="2" class="parcours__intro__title">
                 Mon parcours
-                <span>Diplômes</span>
+                <span class="sub_title">Diplômes</span>
             </h2>
             <img
                     class="parcours__intro__img"
@@ -94,7 +95,7 @@
         <article class="parcours__card">
             <h3 role=heading aria-level="3" class="parcours__card__title">
                 Bachelier en techniques graphiques orientation&nbsp;-&nbsp;Web
-                <span>Haute&nbsp;-&nbsp;Ecole de la Province de Liège</span>
+                <span class="parcours__card__sub_title" itemprop="name">Haute&nbsp;-&nbsp;Ecole de la Province de Liège</span>
             </h3>
             <p class="parcours__card__text">
                 Apprentissages du design web et de ses langages de codes, l&apos;utilisation de divers frameworks et
@@ -103,7 +104,7 @@
         </article>
         <article class="parcours__card">
             <h3 role="heading" aria-level="3" class="parcours__card__title">Bachelier en Écriture Multimédia
-                <span>Haute&nbsp;-&nbsp;Ecole de la Province de Liège</span>
+                <span class="parcours__card__sub_title">Haute&nbsp;-&nbsp;Ecole de la Province de Liège</span>
             </h3>
             <p class="parcours__card__text">
                 Apprentissages dans le domaine de l&apos;<abbr title="User Experience">UX</abbr> mais également dans la
@@ -113,7 +114,7 @@
         <article class="parcours__card">
             <h3 role="heading" aria-level="3" class="parcours__card__title">
                 Formation secondaire&nbsp;-&nbsp;option sciences et mathématiques
-                <span> Etablissement secondaire <abbr title="Saint">St</abbr>-Roch Theux</span>
+                <span class="parcours__card__sub_title"> Etablissement secondaire <abbr title="Saint">St</abbr>-Roch Theux</span>
             </h3>
             <p class="parcours__card__text">
                 Apprentissages approfondis des sciences en général ainsi qu&apos;une pratique des mathématiques
@@ -125,7 +126,7 @@
         <div>
             <h2 role="heading" aria-level="2" class="portfolio__title">
                 Mon portfolio
-                <span>Découvrez tous mes projets</span>
+                <span class="sub_title">Découvrez tous mes projets</span>
             </h2>
             <p class="portfolio__text">
                 Découvrez l&apos;étendue de mon parcours professionnel à travers la section dédiée à
@@ -146,7 +147,7 @@
     <section id="about">
         <h2 role="heading" aria-level="2" class="about__title">
             A propos de moi
-            <span>La qualité de mon travail</span>
+            <span class="sub_title">La qualité de mon travail</span>
         </h2>
         <p class="about__text">
             Retrouvez la citation qui dicte ma façon de travailler ainsi que d’un retour client et de statistique lié son projet.
@@ -197,7 +198,7 @@
         <div class="skills__column1">
             <h2 role="heading" aria-level="2" class="skills__column1__title">
                 Mes compétences
-                <span>Ce que je peux apporter</span>
+                <span class="sub_title">Ce que je peux apporter</span>
             </h2>
             <p class="skills__column1__text">
                 Découvrez mes compétences acquises lors de mon parcours scolaire ainsi que dans ma vie professionnelle.
@@ -251,15 +252,15 @@
     <section class="reviews">
         <h2 role="heading" aria-level="2" class="reviews__title">
             Avis sur mon travail
-            <span>3 reviews de clients</span>
+            <span class="sub_title">3 reviews de clients</span>
         </h2>
         <p class="reviews__text">
             Voici quelques retours des clients pour qui j’ai pu travailler.
         </p>
         <span class="reviews__smallText">Que disent ils&nbsp;?</span>
-        <article class="reviews__article">
-            <h2 role="heading" aria-level="2" class="reviews__article__title">Avis 1</h2>
-            <p class="reviews__article__text">
+        <article class="reviews__article" itemscope itemtype="https://schema.org/Review">
+            <h2 role="heading" aria-level="2" class="reviews__article__title" itemprop="name">Avis Frédéric Dubois</h2>
+            <p class="reviews__article__text" itemprop="reviewBody">
                 “Sam a dépassé nos attentes avec le design de notre boutique en ligne. Le site
                 capture parfaitement l'essence de notre artisanat, offrant une expérience visuelle captivante. Grâce à
                 son expertise, notre boutique en ligne est maintenant moderne et attire l'attention de nos clients.
@@ -269,9 +270,9 @@
                 Frédéric Dubois <span>Electricien indépendant</span>
             </p>
         </article>
-        <article class="reviews__article">
-            <h2 role="heading" aria-level="2" class="reviews__article__title">Avis 2</h2>
-            <p class="reviews__article__text">
+        <article class="reviews__article" itemscope itemtype="https://schema.org/Review">
+            <h2 role="heading" aria-level="2" class="reviews__article__title" itemprop="name">Avis Luca Roberty</h2>
+            <p class="reviews__article__text" itemprop="reviewBody">
                 “Il a créé un site web exceptionnel pour moi en tant que photographe. Il a
                 capturé parfaitement l'esthétique de mon travail, offrant une présentation visuelle saisissante. Le site
                 est simple, élégant, et met en valeur mon portfolio de manière percutante. Très satisfait de la
@@ -281,9 +282,9 @@
                 Luca Roberty <span>Photographe</span>
             </p>
         </article>
-        <article class="reviews__article">
-            <h2 role="heading" aria-level="2" class="reviews__article__title">Avis 3</h2>
-            <p class="reviews__article__text">
+        <article class="reviews__article" itemscope itemtype="https://schema.org/Review">
+            <h2 role="heading" aria-level="2" class="reviews__article__title" itemprop="name">Avis Chenghao Pan</h2>
+            <p class="reviews__article__text" itemprop="reviewBody">
                 “Un grand merci à Sam pour avoir transformé notre approche des commandes en
                 ligne. Le site web de notre restaurant est maintenant plus convivial grâce à sa conception intuitive et
                 à ses fonctionnalités pratiques. Sam a su répondre rapidement à nos besoins spécifiques, rendant le
@@ -320,7 +321,7 @@
             <div class="contact__container__infos">
                 <h2 role="heading" aria-level="2" class="title">
                     Me contacter
-                    <span>Formulaire</span>
+                    <span class="sub_title">Formulaire</span>
                 </h2>
                 <p class="text">
                     Si vous souhaitez me poser une question ou me contacter afin qu’on puisse travailler sur un de vos projets, n’hésitez pas à me contacter via ce formulaire.
@@ -339,19 +340,19 @@
                     <fieldset>
                         <div class="contact__form__firstname">
                             <label for="firstname">Prénom</label>
-                            <input type="text" name="firstname" id="firstname" placeholder="Prénom" autocomplete required>
+                            <input type="text" name="firstname" id="firstname" placeholder="Prénom" autocomplete="name" required>
                         </div>
                         <div class="contact__form__name">
                             <label for="name">Nom</label>
-                            <input type="text" name="name" id="name" placeholder="Nom" autocomplete required>
+                            <input type="text" name="name" id="name" placeholder="Nom" autocomplete="family-name" required>
                         </div>
                         <div class="contact__form__email">
                             <label for="email">Email</label>
-                            <input type="text" name="email" id="email" placeholder="Email" autocomplete required>
+                            <input type="text" name="email" id="email" placeholder="Email" autocomplete="email" required>
                         </div>
                         <div class="contact__form__phoneNumber">
-                            <label for="number">Nom</label>
-                            <input type="tel" name="number" id="number" placeholder="+ 32 (0)472 86 02 18" autocomplete>
+                            <label for="number">Numéro</label>
+                            <input type="tel" name="number" id="number" placeholder="+ 32 (0)472 86 02 18">
                         </div>
                         <div class="contact__form__budget">
                             <label for="budget">Budget</label>
@@ -377,7 +378,7 @@
         </div>
     </section>
     <footer role="contentinfo">
-        <section class="footer">
+        <section class="footer"  itemprop="contactPoint" itemscope itemtype="https://schema.org/contactPoint">
             <h2 role="heading" aria-level="2" class="footer__title">Sam Requena</h2>
             <ul role="list" class="footer__col1">
                 <li>
@@ -428,10 +429,10 @@
             </ul>
             <ul role="list" class="footer__col5">
                 <li>
-                    <a title="Envoyer un email à Sam" href="mailto:samrequena1510@gmail.com">samrequena1510@gmail.com</a>
+                    <a title="Envoyer un email à Sam" href="mailto:samrequena1510@gmail.com"><span itemprop="email">samrequena1510@gmail.com</span></a>
                 </li>
                 <li>
-                    <a title="Téléphoner à Sam" href="tel:+32472860218">+ 32 (0)472 86 02 18</a>
+                    <a title="Téléphoner à Sam" href="tel:+32472860218"><span itemprop="telephone">+ 32 (0)472 86 02 18</span></a>
                 </li>
             </ul>
             <hr><!--Barre de séparation-->

@@ -1,10 +1,37 @@
 
-$bg-color: #FBFCF6;
+$bg-color: #fbfcf5
+;
 
 body {
   background-color: $bg-color;
 }
-
+h2{
+  font-family: Noi Grotesk Trial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.sub_title{
+  display: block;
+  font-family: Newsreader, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 350;
+}
+.cta{
+  font-family: Noi Grotesk Trial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 12px 14px;
+  background: #6cd689;
+  color: black;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  width: fit-content;
+}
+ul{
+  font-family: Noi Grotesk Trial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
 img {
   width: 100%;
   height: auto;

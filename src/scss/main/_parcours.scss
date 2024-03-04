@@ -1,35 +1,75 @@
 /* Parcours section */
 .parcours {
+  background: #eef2e4;
+  padding: 36px 1.8rem;
 
   &__intro {
-
-      &__title {
-
-        span {
-
-        }
-      }
-
-    &__img {
-
-    }
-
-    &__link {
-
-    }
-  }
-
-  &__card {
+    line-height: 37.8px;
+    letter-spacing: -0.2px;
 
     &__title {
+      margin-bottom: 1.5rem;
 
       span {
 
       }
     }
 
-    &__text {
+    img {
+      display: block;
+      width: 100px;
+      height: 181.65px;
+      margin: auto;
+    }
 
+    &__link {
+      display: block;
+      margin: 1.4rem 0 2.4rem;
+      color: #118631;
+      font-family: Newsreader, "Times New Roman", Serif;
+      font-style: italic;
+      font-size: 0.90rem;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-gap: 1.5rem;
+    justify-content: center;
+
+    &__card {
+      padding: 24px 24px 48px;
+      background: white;
+      border: none;
+      border-radius: 6px;
+      box-shadow: 2px 4px 24px rgba(0, 0, 0, .04);
+      max-width: 640px;
+
+      &__title {
+        font-size: 1.75rem;
+        font-family: Newsreader, "Times New Roman", Serif;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 35px;
+        letter-spacing: -0.2px;
+
+        span {
+          display: block;
+          font-family: "Noi Grotesk Trial", Helvetica, Serif;
+          font-style: normal;
+          font-weight: 380;
+        }
+      }
+
+      &__text {
+        font-family: Newsreader, "Times New Roman", Serif;
+        padding-top: 1.5rem;
+        font-size: 1rem;
+        font-weight: lighter;
+        line-height: 20.8px;
+      }
     }
   }
 }

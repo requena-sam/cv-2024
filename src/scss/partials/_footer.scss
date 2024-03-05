@@ -1,68 +1,113 @@
-.footer {
+footer {
+  padding: 2.5rem 1.5rem;
+  background: green;
 
   .footer {
-    &__title {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 6px;
 
+    &__title {
+      font-size: 1.5rem;
     }
 
     ul {
+      display: grid;
+      grid-gap: 0.8rem;
 
       li {
 
         a {
-
+          text-decoration: none;
+          color: black;
         }
       }
     }
 
-    &__col1 {
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1.5rem;
+      margin-top: 1.5rem;
 
+      &__col1 {
+
+      }
+
+      &__col2 {
+
+      }
+
+      &__col3 {
+
+      }
+
+      &__col4 {
+
+      }
+
+      &__col5 {
+
+      }
     }
 
-    &__col2 {
-
-    }
-
-    &__col3 {
-
-    }
-
-    &__col4 {
-
-    }
-
-    &__col5 {
-
+    hr {
+      width: 100%;
+      grid-column: span 2 / span 2;
     }
 
     // After the hr tag
-    &__infos {
+    &__group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column: span 2 / span 2;
 
-      li {
+      a {
+        font-family: "Noi Grotesk Trial", Helvetica, sans-serif;
+        text-decoration: none;
+        color: #999;
+      }
 
-        a {
+      &__infos {
+        grid-column-gap: 0.8rem;
+        grid-template-columns: auto auto auto;
 
+        li {
+          a {
+            color: #999 !important;;
+          }
         }
       }
     }
 
     &__social {
+      grid-template-columns: 1fr 1fr;
+      grid-column: span 1 / span 1;
 
       li {
 
         a {
 
           img {
-
+            width: 24px;
           }
         }
       }
     }
 
     &__copyright {
-
       &__text {
+        font-family: "Noi Grotesk Trial", Helvetica, sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.3;
+        color: #999;
+        margin-top: 1.5rem;
 
+        a {
+          color: #118631;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -86,24 +131,28 @@
         }
       }
 
-      &__col1 {
+      &__container {
 
-      }
 
-      &__col2 {
+        &__col1 {
 
-      }
+        }
 
-      &__col3 {
+        &__col2 {
 
-      }
+        }
 
-      &__col4 {
+        &__col3 {
 
-      }
+        }
 
-      &__col5 {
+        &__col4 {
 
+        }
+
+        &__col5 {
+
+        }
       }
 
       // After the hr tag

@@ -93,7 +93,7 @@
             </a>
         </div>
         <div class="parcours__container">
-            <article class="parcours__container__card">
+            <article class="parcours__container__card max">
                 <h3 role=heading aria-level="3" class="parcours__container__card__title">
                     Bachelier en techniques graphiques orientation&nbsp;-&nbsp;Web
                     <span class="parcours__container__card__sub_title"
@@ -104,7 +104,7 @@
                     gestion de bases de données.
                 </p>
             </article>
-            <article class="parcours__container__card">
+            <article class="parcours__container__card max">
                 <h3 role="heading" aria-level="3" class="parcours__container__card__title">Bachelier en Écriture
                     Multimédia
                     <span class="parcours__container__card__sub_title">Haute&nbsp;-&nbsp;Ecole de la Province de Liège</span>
@@ -115,7 +115,7 @@
                     prise de vues de photos et vidéos ainsi que leurs retouches et montages.
                 </p>
             </article>
-            <article class="parcours__container__card">
+            <article class="parcours__container__card max">
                 <h3 role="heading" aria-level="3" class="parcours__container__card__title">
                     Formation secondaire&nbsp;-&nbsp;option sciences et mathématiques
                     <span class="parcours__container__card__sub_title"> Etablissement secondaire <abbr
@@ -153,7 +153,7 @@
             >
         </div>
     </section>
-    <section id="about">
+    <section id="about" class="about">
         <h2 role="heading" aria-level="2" class="about__title">
             A propos de moi
             <span class="sub_title">La qualité de mon travail</span>
@@ -163,7 +163,7 @@
             son projet.
         </p>
         <div class="about__content">
-            <div class="about__content__citation">
+            <div class="about__content__citation max">
                 <p>
                     "Lorsque mes clients choisissent mes services, je m'engage à assurer leur entière satisfaction. Je
                     considère chaque retour client comme essentiel. Un client satisfait est un ambassadeur potentiel,
@@ -172,7 +172,7 @@
                 <cite>Sam Requena</cite>
                 <span>Web Developper</span>
             </div>
-            <div class="about__content__photo">
+            <div class="about__content__photo max">
                 <img
                         src="src/img/about_moi.jpg"
                         alt="Photo de Sam Requena"
@@ -181,7 +181,7 @@
                         height="2727"
                 >
             </div>
-            <div class="about__content__client">
+            <div class="about__content__client max">
                 <img src="src/img/client.webp" alt="Photo de profil d'un client" title="Photo de profil d'un client">
                 <blockquote>
                     “Bon travail, mon site m’as permis de mieux me développer et également générer beaucoup plus de
@@ -190,12 +190,13 @@
                     <span>client</span>
                 </blockquote>
             </div>
-            <div class="about__content__stats">
+            <div class="about__content__stats max">
                 <dl role="list">
                     <dt>Prise de contact avec de nouveaux clients</dt>
-                    <dd>41&percnt;</dd>
+                    <dd>+41&percnt;</dd>
+                    <span></span>
                     <dt>Bénéfice sur l’année</dt>
-                    <dd>12&percnt;</dd>
+                    <dd>+12&percnt;</dd>
                 </dl>
             </div>
         </div>
@@ -204,7 +205,7 @@
             En savoir plus sur moi
         </a>
     </section>
-    <section id="skills">
+    <section id="skills" class="skills">
         <div class="skills__column1">
             <h2 role="heading" aria-level="2" class="skills__column1__title">
                 Mes compétences
@@ -216,7 +217,7 @@
             <!--    Ajout SVG-->
         </div>
         <div class="skills__column2">
-            <article class="skills__column2__article">
+            <article class="skills__column2__article max">
                 <h3 role="heading" aria-level="3" class="skills__column2__article__title">
                     Maitrise des langages essentielles du web
                 </h3>
@@ -227,7 +228,7 @@
                     dynamiques.
                 </p>
             </article>
-            <article class="skills__column2__article">
+            <article class="skills__column2__article max">
                 <h3 role="heading" aria-level="3" class="skills__column2__article__title">
                     Conception web
                 </h3>
@@ -238,7 +239,7 @@
                     Figma;
                 </p>
             </article>
-            <article class="skills__column2__article">
+            <article class="skills__column2__article max">
                 <h3 role="heading" aria-level="3" class="skills__column2__article__title" lang="en">
                     Soft skills
                 </h3>
@@ -248,7 +249,7 @@
                     professionnelles, favorisant une approche collaborative et orientée résultats.
                 </p>
             </article>
-            <article class="skills__column2__article">
+            <article class="skills__column2__article max">
                 <h3 role="heading" aria-level="3" class="skills__column2__article__title">
                     Adaptabilité
                 </h3>
@@ -263,16 +264,18 @@
         </div>
     </section>
     <section class="reviews">
-        <h2 role="heading" aria-level="2" class="reviews__title">
-            Avis sur mon travail
-            <span class="sub_title">3 reviews de clients</span>
-        </h2>
-        <p class="reviews__text">
-            Voici quelques retours des clients pour qui j’ai pu travailler.
-        </p>
+        <div class="reviews__head">
+            <h2 role="heading" aria-level="2" class="reviews__head__title">
+                Avis sur mon travail
+                <span class="sub_title">3 reviews de clients</span>
+            </h2>
+            <p class="reviews__head__text">
+                Voici quelques retours des clients pour qui j’ai pu travailler.
+            </p>
+        </div>
         <span class="reviews__smallText">Que disent ils&nbsp;?</span>
         <article class="reviews__article" itemscope itemtype="https://schema.org/Review">
-            <h2 role="heading" aria-level="2" class="reviews__article__title" itemprop="name">Avis Frédéric Dubois</h2>
+            <h2 role="heading" aria-level="2" class="reviews__article__title hidden" itemprop="name">Avis Frédéric Dubois</h2>
             <p class="reviews__article__text" itemprop="reviewBody">
                 “Sam a dépassé nos attentes avec le design de notre boutique en ligne. Le site
                 capture parfaitement l'essence de notre artisanat, offrant une expérience visuelle captivante. Grâce à
@@ -284,7 +287,7 @@
             </p>
         </article>
         <article class="reviews__article" itemscope itemtype="https://schema.org/Review">
-            <h2 role="heading" aria-level="2" class="reviews__article__title" itemprop="name">Avis Luca Roberty</h2>
+            <h2 role="heading" aria-level="2" class="reviews__article__title hidden" itemprop="name">Avis Luca Roberty</h2>
             <p class="reviews__article__text" itemprop="reviewBody">
                 “Il a créé un site web exceptionnel pour moi en tant que photographe. Il a
                 capturé parfaitement l'esthétique de mon travail, offrant une présentation visuelle saisissante. Le site
@@ -296,13 +299,12 @@
             </p>
         </article>
         <article class="reviews__article" itemscope itemtype="https://schema.org/Review">
-            <h2 role="heading" aria-level="2" class="reviews__article__title" itemprop="name">Avis Chenghao Pan</h2>
+            <h2 role="heading" aria-level="2" class="reviews__article__title hidden" itemprop="name">Avis Chenghao Pan</h2>
             <p class="reviews__article__text" itemprop="reviewBody">
                 “Un grand merci à Sam pour avoir transformé notre approche des commandes en
                 ligne. Le site web de notre restaurant est maintenant plus convivial grâce à sa conception intuitive et
                 à ses fonctionnalités pratiques. Sam a su répondre rapidement à nos besoins spécifiques, rendant le
-                processus agréable. Nous recommandons vivement Sam pour toute entreprise cherchant à améliorer sa
-                présence en ligne.”
+                processus agréable. Nous recommandons vivement Sam.
             </p>
             <p class="reviews__article__name">
                 Chenghao Pan <span>Restaurateur</span>
@@ -320,12 +322,14 @@
                     Y aller
                 </a>
             </div>
+            <div class="info__image">
             <img src="./src/img/alerte_portfolio.webp"
                  alt="Illustration d'un personnage"
                  title="Illustration d'un personnage"
                  width="348"
                  height="392"
             >
+            </div>
         </div>
     </section>
     <section id="contact" class="contact">

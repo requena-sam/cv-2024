@@ -1,23 +1,33 @@
+html {
+  scroll-behavior: smooth;
+}
 
-$bg-color: #fbfcf5
-;
+abbr {
+  text-decoration: none;
+}
+
+$bg-color: #fbfcf5;
 
 body {
   background-color: $bg-color;
 }
-h2{
+
+h2 {
   font-family: Noi Grotesk Trial, Helvetica, sans-serif;
   font-size: 2.25rem;
   font-weight: 400;
 }
-.sub_title{
+
+.sub_title {
   display: block;
   font-family: Newsreader, "Times New Roman", serif;
   font-style: italic;
   font-size: 2rem;
   font-weight: 350;
 }
-.cta{
+
+.cta {
+  box-sizing: border-box;
   font-family: Noi Grotesk Trial, Helvetica, sans-serif;
   font-size: 1rem;
   padding: 12px 14px;
@@ -28,10 +38,12 @@ h2{
   border-radius: 6px;
   width: fit-content;
 }
-ul{
+
+ul {
   font-family: Noi Grotesk Trial, Helvetica, sans-serif;
   font-size: 1rem;
 }
+
 img {
   width: 100%;
   height: auto;

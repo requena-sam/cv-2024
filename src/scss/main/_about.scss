@@ -1,35 +1,74 @@
 /* About section */
-.about {
+#about {
+  padding: 24px 1.8rem;
+}
 
+.about {
   &__title {
+    margin-bottom: 1.8rem;
+    line-height: 39.9px;
+    letter-spacing: -0.2;
 
     span {
-
     }
   }
 
   &__text {
-
+    font-family: Newsreader, "Times New Roman", Serif;
+    font-style: italic;
+    font-weight: 300;
+    max-width: 30rem;
+    margin-bottom: 2.5rem;
   }
 
   &__content {
+    display: grid;
+    grid-gap: 1.8rem;
+    margin: auto;
+    justify-content: center;
 
     &__citation {
+      background: #f8a08c;
+      padding: 1.8rem;
+      border: none;
+      border-radius: 6px;
 
       p {
-
+        font-family: Newsreader, "Times New Roman", Serif;
+        font-size: 1.7rem;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 34px;
+        max-width: 40rem;
+        margin-bottom: 4rem;
       }
 
       cite {
-
+        font-family: Newsreader, "Times New Roman", Serif;
+        font-size: 0.8rem;
+        font-weight: 300;
+        font-style: italic;
       }
 
       span {
-
+        display: block;
+        font-family: Newsreader, "Times New Roman", Serif;
+        font-size: 0.8rem;
+        font-weight: 300;
+        font-style: italic;
       }
     }
 
     &__photo {
+      width: auto;
+      padding: 1.8rem;
+      border: none;
+      border-radius: 6px;
+      background: #6cd689;
+      /*background-image: url("../../img/about_moi.jpg");
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;*/
 
       img {
 
@@ -37,35 +76,113 @@
     }
 
     &__client {
+      padding: 1.8rem;
+      background: #f9ffd8;
+      border: none;
+      border-radius: 6px;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      grid-row-gap: 1.8rem;
 
       img {
-
+        border: none;
+        border-radius: 6px;
       }
 
       blockquote {
+        font-family: Newsreader, "Times New Roman", Serif;
+        font-size: 1.7rem;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 33.6px;
 
+        cite {
+          display: block;
+          font-family: Newsreader, "Times New Roman", Serif;
+          font-size: 0.8rem;
+          font-weight: 300;
+          font-style: italic;
+          margin-top: 2.8rem;
+          line-height: normal;
+        }
+
+        span {
+          display: block;
+          font-family: Newsreader, "Times New Roman", Serif;
+          font-size: 0.8rem;
+          font-weight: 300;
+          font-style: italic;
+          line-height: normal;
+        }
       }
     }
 
     &__stats {
+      font-family: "Noi Grotesk Trial", Helvetica, sans-serif;
+      width: auto;
+      padding: 1.8rem;
+      background: #005924;
+      border: none;
+      border-radius: 6px;
+      color: white;
 
       dl {
+        display: grid;
+        grid-row-gap: 0.6rem;
+
+        span {
+          background: white;
+          height: 1px;
+          margin-bottom: 1.2rem;
+        }
+
         dt {
 
         }
 
         dd {
-
+          font-size: 4.4rem;
+          padding-bottom: 1.2rem;
         }
       }
     }
   }
 
   &__lastText {
-
+    font-family: "Noi Grotesk Trial", Helvetica, sans-serif;
+    margin: 60px 0 0.6rem;
+    text-align: center;
   }
 
   &__lastLink {
-
+    display: block;
+    color: #118631;
+    font-family: Newsreader, "Times New Roman", Serif;
+    font-style: italic;
+    font-size: 0.90rem;
+    text-decoration: none;
+    text-align: center;
   }
 }
+
+@media (max-width: 990px) {
+  .max {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__content__client {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.8rem;
+    grid-row-gap: 0;
+
+    blockquote {
+      cite {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+}
+

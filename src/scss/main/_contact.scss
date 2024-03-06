@@ -1,7 +1,7 @@
 /* Contact section -> full page screen */
 .contact {
   background: #b6ebc4;
-  padding: 1.5rem;
+  padding: 4rem 1.5rem;
 
   &__close {
 
@@ -66,23 +66,6 @@
         }
       }
 
-      &__firstname {
-
-      }
-
-      &__name {
-
-      }
-
-      &__email {
-
-      }
-
-
-      &__phoneNumber {
-
-      }
-
       &__budget {
         select {
           display: block;
@@ -138,6 +121,22 @@
           font-style: italic;
           color: #005924;
         }
+      }
+    }
+  }
+}
+@media (min-width: 991px) {
+  .contact{
+    &__container{
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-column-gap: 8.4rem;
+      &__infos{
+        max-width: 54ch;
+        padding-left: 120px;
+      }
+      .contact__form{
+        padding-right: 120px;
       }
     }
   }

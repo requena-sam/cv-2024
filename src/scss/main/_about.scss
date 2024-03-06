@@ -71,7 +71,6 @@
        background-repeat: no-repeat;*/
 
       img {
-
       }
     }
 
@@ -183,6 +182,42 @@
       }
     }
   }
-
 }
 
+@media (min-width: 991px) {
+  .about {
+    &__content {
+      width: 100%;
+      height: 100%;
+      padding: 6rem;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:". . . p p p . "
+                        ". ci ci p p p . "
+                        "cl cl cl cl st st st "
+                        ". . . . st st st ";
+
+      &__citation {
+        grid-area: ci;
+      }
+
+      &__photo {
+        grid-area: p;
+
+      }
+
+      &__client {
+        grid-area: cl;
+
+      }
+
+      &__stats {
+        grid-area: st;
+      }
+    }
+
+
+  }
+}

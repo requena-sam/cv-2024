@@ -14,30 +14,32 @@
 
       }
     }
-
-    img {
-      display: block;
-      width: 100px;
-      height: 181.65px;
-      margin: auto;
-    }
-
-    &__link {
-      display: block;
-      margin: 1.4rem 0 2.4rem;
-      color: #118631;
-      font-family: Newsreader, "Times New Roman", Serif;
-      font-style: italic;
-      font-size: 0.90rem;
-      text-decoration: none;
-      text-align: center;
-    }
   }
 
   &__container {
+
     display: grid;
     grid-gap: 1.5rem;
     justify-content: center;
+
+    &__image {
+      img {
+        display: block;
+        width: 100px;
+        margin: auto;
+      }
+
+      &__link {
+        display: block;
+        margin: 1.4rem 0 2.4rem;
+        color: #118631;
+        font-family: Newsreader, "Times New Roman", Serif;
+        font-style: italic;
+        font-size: 0.90rem;
+        text-decoration: none;
+        text-align: center;
+      }
+    }
 
     &__card {
       padding: 24px 24px 48px;
@@ -45,6 +47,7 @@
       border: none;
       border-radius: 6px;
       box-shadow: 2px 4px 24px rgba(0, 0, 0, .04);
+      height: 100%;
 
       &__title {
         font-size: 1.75rem;
@@ -69,6 +72,37 @@
         font-weight: lighter;
         line-height: 20.8px;
       }
+
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .parcours {
+    &__container {
+      &__image {
+        img {
+          width: 8.313rem;
+        }
+      }
+
+      &__card {
+        &__title {
+          font-size: 2rem;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .parcours {
+
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      align-items: center;
     }
   }
 }

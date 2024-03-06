@@ -11,13 +11,13 @@
     <title>Sam Requena - Développeur Web - Curriculum Vitae</title>
 </head>
 <body>
-<header role="banner">
-    <h1 role="heading" aria-level="1" class="banner__title">
+<header role="banner" class="banner">
+    <h1 role="heading" aria-level="1" class="banner__title hidden">
         <a href="/" title="Vers la page d'accueil">Sam Requena</a>
     </h1>
     <nav role="navigation" class="banner__navigation">
-        <h2 role="heading" aria-level="2" class="hidden">Navigation principale</h2>
-        <ul role="list" class="banner__navigation__list">
+        <h2 role="heading" aria-level="2" class="banner__navigation__title">Sam Requena</h2>
+        <ul role="list" class="banner__navigation__list__link">
             <li>
                 <a href="#parcours" title="Vers la section de parcours">Parcours</a>
             </li>
@@ -28,15 +28,15 @@
                 <a href="#about" title="Vers la section d'a propos">À propos de moi</a>
             </li>
             <li>
-                <a href="#skills" title="Vers la section de compétences">Compétences</a>
+                <a href="#skills__container" title="Vers la section de compétences">Compétences</a>
             </li>
         </ul>
-        <ul role="list" class="banner__navigation__list">
+        <ul role="list" class="banner__navigation__list__more">
             <li>
-                <a href="#social" title="Vers la section de mes réseaux">Mes Réseaux</a>
+                <a href="#social" title="Vers la section de mes réseaux">Réseaux</a>
             </li>
             <li>
-                <a href="#formContact" title="Vers la section de contact">Contacter</a>
+                <a href="#formContact" title="Vers la section de contact" class="btn">Contacter</a>
             </li>
         </ul>
     </nav>
@@ -59,7 +59,7 @@
                 En apprendre d’avantages sur mes clients
             </a>
         </div>
-        <div class="home__column2" itemscope itemtype="https://schema.org/Person">
+        <div class="home__column2 max" itemscope itemtype="https://schema.org/Person">
             <h2 role="heading" aria-level="2" class="home__column2__title">
                 <span itemprop="name">Sam</span> <span itemprop="familyName">Requena</span>
                 <span lang="en" class="sub_title" itemprop="jobTitle">Web Developer</span>
@@ -80,19 +80,21 @@
                 Mon parcours
                 <span class="sub_title">Diplômes</span>
             </h2>
-            <img
-                    class="parcours__intro__img"
-                    src="src/img/parcours_illustration.svg"
-                    alt="Illustration d'un personnage qui marche"
-                    title="Illustration d'un personnage qui marche"
-                    width="109"
-                    height="198"
-            >
-            <a href="#" class="parcours__intro__link" title="Vers la liste de mes compétences">
-                Mes compétences apprises
-            </a>
         </div>
         <div class="parcours__container">
+            <div class="parcours__container__image">
+                <img
+                        class="parcours__image__img"
+                        src="src/img/parcours_illustration.svg"
+                        alt="Illustration d'un personnage qui marche"
+                        title="Illustration d'un personnage qui marche"
+                        width="109"
+                        height="198"
+                >
+                <a href="#" class="parcours__container__image__link" title="Vers la liste de mes compétences">
+                    Mes compétences apprises
+                </a>
+            </div>
             <article class="parcours__container__card max">
                 <h3 role=heading aria-level="3" class="parcours__container__card__title">
                     Bachelier en techniques graphiques orientation&nbsp;-&nbsp;Web
@@ -100,7 +102,8 @@
                           itemprop="name">Haute&nbsp;-&nbsp;Ecole de la Province de Liège</span>
                 </h3>
                 <p class="parcours__container__card__text">
-                    Apprentissages du design web et de ses langages de codes, l&apos;utilisation de divers frameworks et
+                    Apprentissages du design web et de ses langages de codes, l&apos;utilisation de divers
+                    frameworks et
                     gestion de bases de données.
                 </p>
             </article>
@@ -110,7 +113,8 @@
                     <span class="parcours__container__card__sub_title">Haute&nbsp;-&nbsp;Ecole de la Province de Liège</span>
                 </h3>
                 <p class="parcours__container__card__text">
-                    Apprentissages dans le domaine de l&apos;<abbr title="User Experience">UX</abbr> mais également dans
+                    Apprentissages dans le domaine de l&apos;<abbr title="User Experience">UX</abbr> mais également
+                    dans
                     la
                     prise de vues de photos et vidéos ainsi que leurs retouches et montages.
                 </p>
@@ -129,7 +133,7 @@
         </div>
     </section>
     <section id="portfolio" class="portfolio">
-        <div class="portfolio__container">
+        <div class="portfolio__container max">
             <div class="portfolio__container__right">
                 <h2 role="heading" aria-level="2" class="portfolio__container__right__title">
                     Mon portfolio
@@ -206,61 +210,68 @@
         </a>
     </section>
     <section id="skills" class="skills">
-        <div class="skills__column1">
-            <h2 role="heading" aria-level="2" class="skills__column1__title">
-                Mes compétences
-                <span class="sub_title">Ce que je peux apporter</span>
-            </h2>
-            <p class="skills__column1__text">
-                Découvrez mes compétences acquises lors de mon parcours scolaire ainsi que dans ma vie professionnelle.
-            </p>
-            <!--    Ajout SVG-->
-        </div>
-        <div class="skills__column2">
-            <article class="skills__column2__article max">
-                <h3 role="heading" aria-level="3" class="skills__column2__article__title">
-                    Maitrise des langages essentielles du web
-                </h3>
-                <p class="skills__column2__article__text">
-                    Connaissances en HTML, SASS, JavaScript, SQL et PHP, je maîtrise les langages clés du développement
-                    web, permettant la création efficace de pages structurées, de style optimisé, du développement
-                    front-end interactif, de la gestion de bases de données, et de la création d'applications web
-                    dynamiques.
+        <div class="skills__container">
+            <div class="skills__container__column1">
+                <h2 role="heading" aria-level="2" class="skills__container__column1__title">
+                    Mes compétences
+                    <span class="sub_title">Ce que je peux apporter</span>
+                </h2>
+                <p class="skills__container__column1__text">
+                    Découvrez mes compétences acquises lors de mon parcours scolaire ainsi que dans ma vie
+                    professionnelle.
                 </p>
-            </article>
-            <article class="skills__column2__article max">
-                <h3 role="heading" aria-level="3" class="skills__column2__article__title">
-                    Conception web
-                </h3>
-                <p class="skills__column2__article__text">
-                    Je maitrise le concepts fondamentaux du design web comme l’ergonomie, la couleurs, la typographie et
-                    la mise en page,
-                    je me considère comme un bon créatif maîtrisant les outils tels que Photoshop, Illustrator ou encore
-                    Figma;
-                </p>
-            </article>
-            <article class="skills__column2__article max">
-                <h3 role="heading" aria-level="3" class="skills__column2__article__title" lang="en">
-                    Soft skills
-                </h3>
-                <p class="skills__column2__article__text">
-                    Doté de solides soft skills, je facilite la collaboration grâce à une communication claire et une
-                    adaptabilité rapide. Ma créativité et mon sens de l'écoute renforcent les relations
-                    professionnelles, favorisant une approche collaborative et orientée résultats.
-                </p>
-            </article>
-            <article class="skills__column2__article max">
-                <h3 role="heading" aria-level="3" class="skills__column2__article__title">
-                    Adaptabilité
-                </h3>
-                <p class="skills__column2__article__text">
-                    Adaptabilité rapide et efficace face aux changements, je m'intègre aisément dans des environnements
-                    dynamiques, assurant ainsi une contribution agile et proactive aux projets.
-                </p>
-            </article>
-            <a href="#parcours" class="skills__column2__link" title="Vers la description de mon parcours">
-                Revoir mon parcours juste ici&nbsp;!
-            </a>
+            </div>
+            <div class="skills__container__column2">
+                <article class="skills__container__column2__article max">
+                    <h3 role="heading" aria-level="3" class="skills__container__column2__article__title">
+                        Maitrise des langages essentielles du web
+                    </h3>
+                    <p class="skills__container__column2__article__text">
+                        Connaissances en HTML, SASS, JavaScript, SQL et PHP, je maîtrise les langages clés du
+                        développement
+                        web, permettant la création efficace de pages structurées, de style optimisé, du développement
+                        front-end interactif, de la gestion de bases de données, et de la création d'applications web
+                        dynamiques.
+                    </p>
+                </article>
+                <article class="skills__container__column2__article max">
+                    <h3 role="heading" aria-level="3" class="skills__container__column2__article__title">
+                        Conception web
+                    </h3>
+                    <p class="skills__container__column2__article__text">
+                        Je maitrise le concepts fondamentaux du design web comme l’ergonomie, la couleurs, la
+                        typographie et
+                        la mise en page,
+                        je me considère comme un bon créatif maîtrisant les outils tels que Photoshop, Illustrator ou
+                        encore
+                        Figma;
+                    </p>
+                </article>
+                <article class="skills__container__column2__article max">
+                    <h3 role="heading" aria-level="3" class="skills__container__column2__article__title" lang="en">
+                        Soft skills__container
+                    </h3>
+                    <p class="skills__container__column2__article__text">
+                        Doté de solides soft skills__container, je facilite la collaboration grâce à une communication claire et
+                        une
+                        adaptabilité rapide. Ma créativité et mon sens de l'écoute renforcent les relations
+                        professionnelles, favorisant une approche collaborative et orientée résultats.
+                    </p>
+                </article>
+                <article class="skills__container__column2__article max">
+                    <h3 role="heading" aria-level="3" class="skills__container__column2__article__title">
+                        Adaptabilité
+                    </h3>
+                    <p class="skills__container__column2__article__text">
+                        Adaptabilité rapide et efficace face aux changements, je m'intègre aisément dans des
+                        environnements
+                        dynamiques, assurant ainsi une contribution agile et proactive aux projets.
+                    </p>
+                </article>
+                <a href="#parcours" class="skills__container__column2__link" title="Vers la description de mon parcours">
+                    Revoir mon parcours juste ici&nbsp;!
+                </a>
+            </div>
         </div>
     </section>
     <section class="reviews">
@@ -467,7 +478,7 @@
                                 itemprop="telephone">+ 32 (0)472 86 02 18</span></a>
                     </li>
                 </ul>
-
+            </div>
             <hr><!--Barre de séparation-->
             <div class="footer__group">
                 <a title="Retour en haut de la page" href="/">&copy; Curriculum Vitae</a>
@@ -486,16 +497,15 @@
             <ul role="list" id="social" class="footer__social">
                 <li>
                     <a href="https://github.com/requena-sam" title="Vers mon profil Github">
-                        <img src="src/img/github.png" alt="Mon Github">
+                        <img src="#" alt="Mon Github">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/sam_requena/" title="Vers mon profil Instagram">
-                        <img src="src/img/instagram.png" alt="Mon instagram">
+                        <img src="#" alt="Mon instagram">
                     </a>
                 </li>
             </ul>
-            </div>
             <div class="footer__copyright">
                 <p class="footer__copyright__text">
                     Tous droits réservés. Aucune reproduction, distribution ou transmission du contenu de ce site n'est
@@ -509,7 +519,8 @@
                     consentement explicite.
                 </p>
                 <p class="footer__copyright__text">
-                    Ce site est une copie du site <a href="https://www.modernlife.com/" title="Lien vers le site Modern Life">Modern Life</a> réalisé dans le cadre de mon apprentissages à la Haute Ecole de la Province de liége.
+                    Ce site peut contenir des liens vers d'autres sites web, mais nous déclinons toute responsabilité
+                    quant à leurs pratiques de confidentialité.
                 </p>
             </div>
         </section>

@@ -10,6 +10,8 @@ $bg-color: #fbfcf5;
 
 body {
   background-color: $bg-color;
+  max-width: 2200px;
+  margin: 0 auto;
 }
 
 h2 {
@@ -49,7 +51,7 @@ img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  max-width: 500px;
+  max-width: 1000px;
 }
 
 hr {

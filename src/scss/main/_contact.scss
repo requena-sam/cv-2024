@@ -12,8 +12,9 @@
     grid-row-gap: 2.25rem;
 
     &__infos {
-      display: grid;
-      grid-row-gap: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
 
       .title {
         font-size: 2.25rem;
@@ -128,15 +129,20 @@
 @media (min-width: 991px) {
   .contact{
     &__container{
+      max-width: 75rem;
+      padding: 0 34px;
       display: grid;
       grid-template-columns: auto 1fr;
-      grid-column-gap: 8.4rem;
+      grid-column-gap: 5.25rem;
+      margin: 0 auto;
       &__infos{
         max-width: 54ch;
-        padding-left: 120px;
+        .img{
+          max-width: 300px;
+        }
       }
       .contact__form{
-        padding-right: 120px;
+        max-width: 550px;
       }
     }
   }

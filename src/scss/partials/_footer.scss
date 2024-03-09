@@ -1,6 +1,9 @@
 footer {
-  padding: 2.5rem 1.5rem;
-  background: green;
+  padding: 200px 1.5rem 20px;
+  background-image: url("../../img/background.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 
   .footer {
     background: white;
@@ -96,7 +99,7 @@ footer {
 }
 
 
-@media (min-width: 950px) {
+@media (min-width: 991px) {
   footer {
     .footer {
       &__title {
@@ -104,17 +107,28 @@ footer {
       }
 
       ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
 
         li {
 
           a {
+            text-decoration: none;
+            color: black;
+          }
 
+          a:hover {
+            color: #005924;
           }
         }
       }
 
       &__container {
-
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 1.8rem;
+        padding: 3rem 5rem;
 
         &__col1 {
 
@@ -138,24 +152,37 @@ footer {
       }
 
       // After the hr tag
-      &__infos {
-
-        li {
-
-          a {
-
+      &__group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 1.2rem;
+        .cv{
+          padding-right: 1rem;
+        }
+        ul {
+          display: flex;
+          flex-direction: row;
+          li {
+            a {
+              color: #999999;
+            }
           }
         }
-      }
 
-      &__social {
 
-        li {
+        &__social {
 
-          a {
+          li {
 
-            img {
+            a {
+              svg:hover{
+                fill: #005924;
+              }
 
+              img {
+
+              }
             }
           }
         }

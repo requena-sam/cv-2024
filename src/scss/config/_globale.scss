@@ -58,6 +58,19 @@ hr {
   border: 0.01rem solid #ccc;
 }
 
+.top {
+  width: 50px;
+  padding: 5px 7px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: #6cd689;
+  border-radius: 100%;
+}
+.top:hover{
+  background: #9ee3b0;
+  transition: 0.3s;
+}
 @media (min-width: 950px) {
   body {
 

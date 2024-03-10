@@ -1,6 +1,6 @@
 footer {
-  padding: 200px 1.5rem 20px;
-  background-image: url("../../img/background.webp");
+  padding: 6rem 1.5rem;
+  background-image: url("../img/background.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -8,24 +8,35 @@ footer {
   .footer {
     background: white;
     padding: 1.5rem;
-    border-radius: 6px;
+    border-radius: 12px;
 
     &__title {
     }
 
     ul {
-
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
 
       li {
 
         a {
+          font-size: 0.8rem;
+          text-decoration: none;
+          color: black;
+        }
 
+        a:hover {
+          color: #005924;
         }
       }
     }
 
     &__container {
-
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 1.5rem;
+      padding: 1.5rem 0;
 
       &__col1 {
 
@@ -54,28 +65,39 @@ footer {
 
     // After the hr tag
     &__group {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-top: 1.2rem;
 
-
-      a {
-
+      .cv {
       }
 
-      &__infos {
+      ul {
+        display: flex;
+        flex-direction: row;
 
         li {
           a {
+            color: #999999;
+            font-size: 0.6rem;
           }
         }
       }
-    }
 
-    &__social {
 
-      li {
+      &__social {
 
-        a {
+        li {
 
-          img {
+          a {
+            svg:hover {
+              fill: #005924;
+            }
+
+            img {
+
+            }
           }
         }
       }
@@ -101,6 +123,8 @@ footer {
 
 @media (min-width: 991px) {
   footer {
+    padding: 200px 1.5rem 20px;
+
     .footer {
       &__title {
 
@@ -116,6 +140,7 @@ footer {
           a {
             text-decoration: none;
             color: black;
+            font-size: 0.9rem;
           }
 
           a:hover {
@@ -157,12 +182,15 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         padding-top: 1.2rem;
-        .cv{
+
+        .cv {
           padding-right: 1rem;
         }
+
         ul {
           display: flex;
           flex-direction: row;
+
           li {
             a {
               color: #999999;
@@ -176,7 +204,7 @@ footer {
           li {
 
             a {
-              svg:hover{
+              svg:hover {
                 fill: #005924;
               }
 

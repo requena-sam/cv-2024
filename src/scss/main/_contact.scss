@@ -2,11 +2,14 @@
 .contact {
   background: #b6ebc4;
   padding: 4rem 1.5rem;
+  position: relative;
 
   &__close {
-
+    position: absolute;
+    width: 2%;
+    top: 40px;
+    right: 40px;
   }
-
   &__container {
     display: grid;
     grid-row-gap: 2.25rem;
@@ -126,22 +129,26 @@
     }
   }
 }
+
 @media (min-width: 991px) {
-  .contact{
-    &__container{
+  .contact {
+    &__container {
       max-width: 75rem;
       padding: 0 34px;
       display: grid;
       grid-template-columns: auto 1fr;
       grid-column-gap: 5.25rem;
       margin: 0 auto;
-      &__infos{
+
+      &__infos {
         max-width: 54ch;
-        .img{
+
+        .img {
           max-width: 300px;
         }
       }
-      .contact__form{
+
+      .contact__form {
         max-width: 550px;
       }
     }

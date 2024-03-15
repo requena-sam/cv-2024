@@ -76,3 +76,20 @@ hr {
 
   }
 }
+@media (max-width: 991px) {
+  .top{
+    right: 25px;
+    bottom: 25px;
+  }
+}
+@media (min-width: 991px) {
+  .special_hidden_max:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}

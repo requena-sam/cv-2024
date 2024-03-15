@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="js-enabled">
+<html lang="fr" class="js-enabled" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Sam Requena">
@@ -12,11 +12,16 @@
 </head>
 <body>
 <header role="banner" class="banner">
+
     <h1 role="heading" aria-level="1" class="banner__title hidden">
         <a href="/" title="Vers la page d'accueil">Sam Requena</a>
     </h1>
     <nav role="navigation" class="banner__navigation">
         <h2 role="heading" aria-level="2" class="banner__navigation__title">Sam Requena</h2>
+        <input type="checkbox" class="input menu-btn special_hidden_max" id="menu-btn">
+        <label class="menu-icon special_hidden_max" for="menu-btn">
+            <span class="navicon special_hidden_max" aria-label="Hamburger menu 'icon'"></span>
+        </label>
         <ul role="list" class="banner__navigation__list__link">
             <li>
                 <a href="#parcours" title="Vers la section de parcours">Parcours</a>
@@ -30,8 +35,14 @@
             <li>
                 <a href="#skills" title="Vers la section de compétences">Compétences</a>
             </li>
+            <li>
+                <a href="#social" title="Vers la section de mes réseaux" class="special_hidden_max">Réseaux</a>
+            </li>
+            <li>
+                <a href="#formContact" title="Vers la section de contact" class="btn special_hidden_max">Contacter</a>
+            </li>
         </ul>
-        <ul role="list" class="banner__navigation__list__more">
+        <ul class="banner__navigation__list__more special_hidden">
             <li>
                 <a href="#social" title="Vers la section de mes réseaux">Réseaux</a>
             </li>
@@ -39,6 +50,7 @@
                 <a href="#formContact" title="Vers la section de contact" class="btn">Contacter</a>
             </li>
         </ul>
+
     </nav>
 </header>
 <main role="main">
@@ -55,7 +67,8 @@
                 >
             </div>
             <span class="special_hidden">Une façon de travailler qui plait au clients</span>
-            <a href="#reviews" class="home__column1__link special_hidden secondary_link" title="Vers la section de mes avis clients">
+            <a href="#reviews" class="home__column1__link special_hidden secondary_link"
+               title="Vers la section de mes avis clients">
                 En apprendre d’avantages sur mes clients
             </a>
         </div>
@@ -91,7 +104,8 @@
                         width="109"
                         height="198"
                 >
-                <a href="#" class="parcours__container__image__link secondary_link" title="Vers la liste de mes compétences">
+                <a href="#skills" class="parcours__container__image__link secondary_link"
+                   title="Vers la liste de mes compétences">
                     Mes compétences apprises
                 </a>
             </div>
@@ -446,7 +460,8 @@
             </div>
         </div>
     </section>
-    <a href="#home" class="top"><img src="src/img/Arrow%20haut%20.png" alt="Aller en haut" title="Vers le haut de la page" width="50" height="50"></a>
+    <a href="#html" class="top"><img src="src/img/Arrow%20haut%20.png" alt="Aller en haut"
+                                     title="Vers le haut de la page" width="50" height="50"></a>
     <footer role="contentinfo">
         <section class="footer">
             <h2 role="heading" aria-level="2" class="footer__title">Sam Requena</h2>
@@ -502,7 +517,8 @@
                 </ul>
                 <ul role="list" class="footer__container__col5" itemscope itemtype="https://schema.org/contactPoint">
                     <li>
-                        <a title="Envoyer un email à Sam" class="special_hidden" href="mailto:samrequena1510@gmail.com"><span itemprop="email">samrequena1510@gmail.com</span></a>
+                        <a title="Envoyer un email à Sam" class="special_hidden" href="mailto:samrequena1510@gmail.com"><span
+                                itemprop="email">samrequena1510@gmail.com</span></a>
                     </li>
                     <li>
                         <a title="Téléphoner à Sam" href="tel:+32472860218"><span

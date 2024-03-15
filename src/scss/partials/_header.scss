@@ -15,10 +15,12 @@
       }
 
       &__list {
+        display: flex;
+        justify-content: space-between;
+
         &__link {
-          display: grid;
-          grid-template-columns: auto auto auto auto;
-          grid-column-gap: 2.25rem;
+          display: flex;
+          gap: 1.5rem;
 
           li {
 
@@ -67,11 +69,12 @@
     }
   }
 }
+
 @media (min-width: 991px) and (max-width: 1120px) {
-   a {
+  a {
     font-size: 0.8rem;
   }
-  .banner__navigation__title{
+  .banner__navigation__title {
     font-size: 1.3rem;
   }
 }

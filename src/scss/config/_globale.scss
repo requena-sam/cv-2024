@@ -5,11 +5,12 @@ html {
 abbr {
   text-decoration: none;
 }
-$cta : #6cd689;
-$cta-hover : #99e3ad;
+
+$cta: #6cd689;
+$cta-hover: #99e3ad;
 $bg-color: #fbfcf5;
-$max-screen : 991px;
-$mid-screen : 768px;
+$max-screen: 991px;
+$mid-screen: 768px;
 
 body {
   background-color: $bg-color;
@@ -43,7 +44,8 @@ h2 {
   border: none;
   border-radius: 6px;
   width: fit-content;
-  &:hover{
+
+  &:hover {
     background: $cta-hover;
   }
 }
@@ -73,21 +75,46 @@ hr {
   background: #6cd689;
   border-radius: 100%;
 }
-.top:hover{
+
+.top:hover {
   background: #9ee3b0;
   transition: 0.3s;
 }
+
+@keyframes showUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.showUp {
+  opacity: 1;
+  transition: 0.5s;
+  animation: showUp 1s;
+
+}
+.opacity-none {
+  opacity: 0;
+}
+
 @media (min-width: 950px) {
   body {
 
   }
 }
+
 @media (max-width: 991px) {
-  .top{
+  .top {
     right: 25px;
     bottom: 25px;
   }
 }
+
 @media (min-width: 991px) {
   .special_hidden_max:not(:focus):not(:active) {
     clip: rect(0 0 0 0);

@@ -57,7 +57,7 @@
     <!-- Section de grille de 2 colonnes -->
     <section id="home" class="home">
         <div class="home__column1">
-            <div class="home__column1__image">
+            <div data-animation="showUp" class="home__column1__image">
                 <img
                         src="src/img/home_moi.webp"
                         alt="photo Sam Requena"
@@ -66,36 +66,37 @@
                         height="1356"
                 >
             </div>
-            <span class="special_hidden">Une façon de travailler qui plait au clients</span>
-            <a href="#reviews" class="home__column1__link special_hidden secondary_link"
+            <span data-animation="showUp" class="special_hidden">Une façon de travailler qui plait au clients</span>
+            <a data-animation="showUp" href="#reviews" class="home__column1__link special_hidden secondary_link"
                title="Vers la section de mes avis clients">
                 En apprendre d’avantages sur mes clients
             </a>
         </div>
-        <div class="home__column2 max" itemscope itemtype="https://schema.org/Person">
+        <div data-animation="showUp" class="home__column2 max" itemscope itemtype="https://schema.org/Person">
             <h2 role="heading" aria-level="2" class="home__column2__title">
                 <span itemprop="name">Sam</span> <span itemprop="familyName">Requena</span>
                 <span lang="en" class="sub_title" itemprop="jobTitle">Web Developer</span>
             </h2>
-            <p class="home__column2__text">
+            <p data-animation="showUp" class="home__column2__text">
                 <span itemprop="description">Aspirant développeur web passionné par la création d&apos;expériences numériques captivantes. Fort d&apos;une
                     formation académique solide et d&apos;une volonté d&apos;apprendre constante, je suis prêt à
                     contribuer
                     à des projets innovants et à évoluer dans le domaine du développement web.</span>
             </p>
-            <a href="#contact" class="cta home__column2__link special_hidden" title="Vers le formulaire de contact">Contacter</a>
+            <a data-animation="showUp" href="#contact" class="cta home__column2__link special_hidden"
+               title="Vers le formulaire de contact">Contacter</a>
         </div>
     </section>
     <!-- Exemple pour le scss -->
     <section id="parcours" class="parcours" itemscope itemtype="https://schema.org/EducationalOrganization">
         <div class="parcours__intro">
-            <h2 role="heading" aria-level="2" class="parcours__intro__title">
+            <h2 data-animation="showUp" role="heading" aria-level="2" class="parcours__intro__title">
                 Mon parcours
                 <span class="sub_title">Diplômes</span>
             </h2>
         </div>
         <div class="parcours__container">
-            <div class="parcours__container__image">
+            <div data-animation="showUp" class="parcours__container__image">
                 <img
                         class="parcours__image__img"
                         src="src/img/parcours_illustration.svg"
@@ -109,7 +110,7 @@
                     Mes compétences apprises
                 </a>
             </div>
-            <article class="parcours__container__card max">
+            <article data-animation="showUp" class="parcours__container__card max">
                 <h3 role=heading aria-level="3" class="parcours__container__card__title">
                     Bachelier en techniques graphiques orientation&nbsp;-&nbsp;Web
                     <span class="parcours__container__card__sub_title"
@@ -121,7 +122,7 @@
                     gestion de bases de données.
                 </p>
             </article>
-            <article class="parcours__container__card max">
+            <article data-animation="showUp" class="parcours__container__card max">
                 <h3 role="heading" aria-level="3" class="parcours__container__card__title">Bachelier en Écriture
                     Multimédia
                     <span class="parcours__container__card__sub_title">Haute&nbsp;-&nbsp;Ecole de la Province de Liège</span>
@@ -133,7 +134,7 @@
                     prise de vues de photos et vidéos ainsi que leurs retouches et montages.
                 </p>
             </article>
-            <article class="parcours__container__card max">
+            <article data-animation="showUp" class="parcours__container__card max">
                 <h3 role="heading" aria-level="3" class="parcours__container__card__title">
                     Formation secondaire&nbsp;-&nbsp;option sciences et mathématiques
                     <span class="parcours__container__card__sub_title"> Etablissement secondaire <abbr
@@ -148,7 +149,7 @@
     </section>
     <section id="portfolio" class="portfolio">
         <div class="portfolio__container max">
-            <div class="portfolio__container__right">
+            <div data-animation="showUp" class="portfolio__container__right">
                 <h2 role="heading" aria-level="2" class="portfolio__container__right__title">
                     Mon portfolio
                     <span class="sub_title">Découvrez tous mes projets</span>
@@ -159,28 +160,29 @@
                     et
                     projets marquants, reflétant ainsi mon engagement
                 </p>
-                <a href="#" class="cta portfolio__container__right__link" title="Let's go !!">On y va !</a>
+                <a data-animation="showUp" href="#" class="cta portfolio__container__right__link" title="Let's go !!">On
+                    y va !</a>
             </div>
-            <img
-                    class="portfolio__img"
-                    src="src/img/portfolio_screen.jpg"
-                    alt="Capture d'écran de mon portfolio"
-                    title="Capture d'écran de mon portfolio"
-                    width="1600"
-                    height="1600"
+            <img data-animation="showUp"
+                 class="portfolio__img"
+                 src="src/img/portfolio_screen.jpg"
+                 alt="Capture d'écran de mon portfolio"
+                 title="Capture d'écran de mon portfolio"
+                 width="1600"
+                 height="1600"
             >
         </div>
     </section>
     <section id="about" class="about">
-        <h2 role="heading" aria-level="2" class="about__title">
+        <h2 data-animation="showUp" role="heading" aria-level="2" class="about__title">
             A propos de moi
             <span class="sub_title">La qualité de mon travail</span>
         </h2>
-        <p class="about__text">
+        <p data-animation="showUp" class="about__text">
             Retrouvez la citation qui dicte ma façon de travailler ainsi que d’un retour client et de statistique lié
             son projet.
         </p>
-        <div class="about__content">
+        <div data-animation="showUp" class="about__content">
             <div class="about__content__citation max">
                 <p>
                     "Lorsque mes clients choisissent mes services, je m'engage à assurer leur entière satisfaction. Je
@@ -190,7 +192,7 @@
                 <cite>Sam Requena</cite>
                 <span>Web Developper</span>
             </div>
-            <div class="about__content__photo max">
+            <div data-animation="showUp" class="about__content__photo max">
                 <img
                         src="src/img/about_moi.jpg"
                         alt="Photo de Sam Requena"
@@ -199,7 +201,7 @@
                         height="2727"
                 >
             </div>
-            <div class="about__content__client max">
+            <div data-animation="showUp" class="about__content__client max">
                 <div class="about__content__client__image">
                     <img src="src/img/client.webp"
                          alt="Photo de profil d'un client"
@@ -214,7 +216,7 @@
 
                 </blockquote>
             </div>
-            <div class="about__content__stats max">
+            <div data-animation="showUp" class="about__content__stats max">
                 <dl role="list">
                     <dt>Prise de contact avec de nouveaux clients</dt>
                     <dd>+41&percnt;</dd>
@@ -224,14 +226,14 @@
                 </dl>
             </div>
         </div>
-        <p class="about__lastText">Vous avez des questions&nbsp;?</p>
-        <a href="#" class="about__lastLink secondary_link" title="Vers la section d'à propos">
+        <p data-animation="showUp" class="about__lastText">Vous avez des questions&nbsp;?</p>
+        <a data-animation="showUp" href="#" class="about__lastLink secondary_link" title="Vers la section d'à propos">
             En savoir plus sur moi
         </a>
     </section>
     <section id="skills" class="skills">
         <div class="skills__container">
-            <div class="skills__container__column1">
+            <div data-animation="showUp" class="skills__container__column1">
                 <h2 role="heading" aria-level="2" class="skills__container__column1__title">
                     Mes compétences
                     <span class="sub_title">Ce que je peux apporter</span>
@@ -256,7 +258,7 @@
                 </svg>
             </div>
             <div class="skills__container__column2">
-                <article class="skills__container__column2__article max">
+                <article data-animation="showUp" class="skills__container__column2__article max">
                     <h3 role="heading" aria-level="3" class="skills__container__column2__article__title">
                         Maitrise des langages essentielles du web
                     </h3>
@@ -268,7 +270,7 @@
                         dynamiques.
                     </p>
                 </article>
-                <article class="skills__container__column2__article max">
+                <article data-animation="showUp" class="skills__container__column2__article max">
                     <h3 role="heading" aria-level="3" class="skills__container__column2__article__title">
                         Conception web
                     </h3>
@@ -281,7 +283,7 @@
                         Figma;
                     </p>
                 </article>
-                <article class="skills__container__column2__article max">
+                <article data-animation="showUp" class="skills__container__column2__article max">
                     <h3 role="heading" aria-level="3" class="skills__container__column2__article__title" lang="en">
                         Soft Skills
                     </h3>
@@ -293,7 +295,7 @@
                         professionnelles, favorisant une approche collaborative et orientée résultats.
                     </p>
                 </article>
-                <article class="skills__container__column2__article max">
+                <article data-animation="showUp" class="skills__container__column2__article max">
                     <h3 role="heading" aria-level="3" class="skills__container__column2__article__title">
                         Adaptabilité
                     </h3>
@@ -303,7 +305,7 @@
                         dynamiques, assurant ainsi une contribution agile et proactive aux projets.
                     </p>
                 </article>
-                <a href="#parcours" class="skills__container__column2__link"
+                <a data-animation="showUp" href="#parcours" class="skills__container__column2__link"
                    title="Vers la description de mon parcours">
                     Revoir mon parcours juste ici&nbsp;!
                 </a>
@@ -312,16 +314,16 @@
     </section>
     <section id="reviews" class="reviews">
         <div class="reviews__head">
-            <h2 role="heading" aria-level="2" class="reviews__head__title">
+            <h2 data-animation="showUp" role="heading" aria-level="2" class="reviews__head__title">
                 Avis sur mon travail
                 <span class="sub_title">3 reviews de clients</span>
             </h2>
-            <p class="reviews__head__text">
+            <p data-animation="showUp" class="reviews__head__text">
                 Voici quelques retours des clients pour qui j’ai pu travailler.
             </p>
         </div>
-        <span class="reviews__smallText">Que disent ils&nbsp;?</span>
-        <div class="reviews__slider">
+        <span data-animation="showUp" class="reviews__smallText">Que disent ils&nbsp;?</span>
+        <div data-animation="showUp" class="reviews__slider">
             <article class="reviews__slider__article" itemscope itemtype="https://schema.org/Review">
                 <h2 role="heading" aria-level="2" class="reviews__slider__article__title hidden" itemprop="name">Avis
                     Frédéric
@@ -368,7 +370,7 @@
                 </p>
             </article>
         </div>
-        <div class="info">
+        <div data-animation="showUp" class="info">
             <div class="info__content">
                 <h2 role="heading" aria-level="2" class="info__content__title">
                     Retrouve les projets dans mon portfolio
@@ -391,27 +393,28 @@
         </div>
     </section>
     <section id="contact" class="contact">
-        <img src="src/img/close_icon.png" title="Fermer le formulaire" alt="Fermer" class="contact__close" width="96" height="120">
+        <img src="src/img/close_icon.png" title="Fermer le formulaire" alt="Fermer" class="contact__close" width="96"
+             height="120">
         <div class="contact__container">
             <div class="contact__container__infos">
-                <h2 role="heading" aria-level="2" class="title">
+                <h2 data-animation="showUp" role="heading" aria-level="2" class="title">
                     Me contacter
                     <span class="sub_title">Formulaire</span>
                 </h2>
-                <p class="text">
+                <p data-animation="showUp" class="text">
                     Si vous souhaitez me poser une question ou me contacter afin qu’on puisse travailler sur un de vos
                     projets, n’hésitez pas à me contacter via ce formulaire.
                 </p>
-                <img
-                        src="src/img/contact_illustration.webp"
-                        alt="Illustration"
-                        title="Illustration"
-                        width="592"
-                        height="592"
-                        class="img special_hidden"
+                <img data-animation="showUp"
+                     src="src/img/contact_illustration.webp"
+                     alt="Illustration"
+                     title="Illustration"
+                     width="592"
+                     height="592"
+                     class="img special_hidden"
                 >
             </div>
-            <div class="contact__form">
+            <div class="contact__form" data-animation="showUp">
                 <form action="#formContact" method="post" id="formContact">
                     <fieldset>
                         <div class="contact__form__firstname">
@@ -464,9 +467,9 @@
                                      title="Vers le haut de la page" width="50" height="50"></a>
     <footer role="contentinfo">
         <section class="footer">
-            <h2 role="heading" aria-level="2" class="footer__title">Sam Requena</h2>
+            <h2 data-animation="showUp" role="heading" aria-level="2" class="footer__title">Sam Requena</h2>
             <div class="footer__container">
-                <ul role="list" class="footer__container__col1">
+                <ul data-animation="showUp" role="list" class="footer__container__col1">
                     <li>
                         <a title="Retour à l'accueil" href="#home">Accueil</a>
                     </li>
@@ -474,7 +477,7 @@
                         <a title="Visitez mon portfolio" href="#portfolio">Portfolio</a>
                     </li>
                 </ul>
-                <ul role="list" class="footer__container__col2">
+                <ul data-animation="showUp" role="list" class="footer__container__col2">
                     <li>
                         <a title="Vers la partie de mon parcours" href="#parcours">Mon parcours</a>
                     </li>
@@ -485,7 +488,7 @@
                         <a title="Vers la partie de mes compétences" href="#skills">Mes compétences</a>
                     </li>
                 </ul>
-                <ul role="list" class="footer__container__col3">
+                <ul data-animation="showUp" role="list" class="footer__container__col3">
                     <li>
                         <a title="Vers la page des ressources" href="#">Ressources</a>
                     </li>
@@ -502,7 +505,7 @@
                         <a title="Visiter le site officiel Dash" href="https://kapeli.com/dash">Dash</a>
                     </li>
                 </ul>
-                <ul role="list" class="footer__container__col4">
+                <ul data-animation="showUp" role="list" class="footer__container__col4">
                     <li>
                         <a title="Visiter le site d'achat de mon ordinateur"
                            href="https://www.apple.com/be-fr/shop/buy-mac/macbook-pro">Mon ordinateur</a>
@@ -515,7 +518,8 @@
                             favorite</a>
                     </li>
                 </ul>
-                <ul role="list" class="footer__container__col5" itemscope itemtype="https://schema.org/contactPoint">
+                <ul data-animation="showUp" role="list" class="footer__container__col5" itemscope
+                    itemtype="https://schema.org/contactPoint">
                     <li>
                         <a title="Envoyer un email à Sam" class="special_hidden" href="mailto:samrequena1510@gmail.com"><span
                                 itemprop="email">samrequena1510@gmail.com</span></a>
@@ -526,9 +530,9 @@
                     </li>
                 </ul>
             </div>
-            <hr><!--Barre de séparation-->
+            <hr data-animation="showUp"><!--Barre de séparation-->
             <div class="footer__group">
-                <ul role="list" class="footer__group__infos">
+                <ul data-animation="showUp" role="list" class="footer__group__infos">
                     <li>
                         <a title="Retour en haut de la page" href="/" class="cv">&copy; Curriculum Vitae</a>
                     </li>
@@ -555,7 +559,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__copyright">
+            <div data-animation="showUp" class="footer__copyright">
                 <p class="footer__copyright__text">
                     Tous droits réservés. Aucune reproduction, distribution ou transmission du contenu de ce site n'est
                     autorisée sans permission écrite préalable.
@@ -575,5 +579,6 @@
         </section>
     </footer>
 </main>
+<script type="module" src="src/js/main.js"></script>
 </body>
 </html>

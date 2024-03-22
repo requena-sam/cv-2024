@@ -5,8 +5,11 @@ html {
 abbr {
   text-decoration: none;
 }
-
+$cta : #6cd689;
+$cta-hover : #99e3ad;
 $bg-color: #fbfcf5;
+$max-screen : 991px;
+$mid-screen : 768px;
 
 body {
   background-color: $bg-color;
@@ -40,6 +43,9 @@ h2 {
   border: none;
   border-radius: 6px;
   width: fit-content;
+  &:hover{
+    background: $cta-hover;
+  }
 }
 
 ul {

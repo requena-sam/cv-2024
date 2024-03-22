@@ -34,14 +34,14 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mid-screen) {
   .portfolio {
     &__container {
     }
   }
 }
 
-@media (min-width: 991px) {
+@media (min-width: $max-screen) {
   .portfolio {
     &__container {
       display: grid;

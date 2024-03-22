@@ -121,7 +121,7 @@ footer {
 }
 
 
-@media (min-width: 991px) {
+@media (min-width: $max-screen) {
   footer {
     padding: 200px 1.5rem 20px;
 

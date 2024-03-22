@@ -230,8 +230,11 @@
   .about__content{
     padding: 0 50px;
   }
+  .about__content__stats dl dd{
+    font-size: 80px;
+  }
 }
-@media (min-width: 991px) and (max-width: 1150px) {
+@media (min-width: $max-screen) and (max-width: 1150px) {
   .about__content__client blockquote{
     font-size: 1.5rem;
   }

@@ -80,9 +80,8 @@
     }
   }
 }
-@media (min-width: 991px) {
+@media (min-width: $max-screen) {
   .reviews__slider__article{
-    transform: translate(350px, 0px);
     min-width: 650px;
   }
   .reviews__slider__article__text{

@@ -66,12 +66,16 @@
         border-radius: 6px;
         padding: 0.75rem 0.875rem;
         text-decoration: none;
+
+        &:hover {
+          background: $cta-hover;
+        }
       }
     }
   }
 }
 
-@media (min-width: 991px) {
+@media (min-width: $max-screen) {
   .skills {
     &__container {
       flex-direction: row;
@@ -82,7 +86,8 @@
 
       &__column1 {
         max-width: 54ch;
-        svg{
+
+        svg {
           width: 100%;
         }
 
@@ -93,7 +98,7 @@
 
 @media (min-width: 1280px) {
   .skills {
-    &__container{
+    &__container {
       padding-left: 48px;
       padding-right: 80px;
     }

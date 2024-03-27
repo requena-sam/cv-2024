@@ -5,6 +5,9 @@ html {
 abbr {
   text-decoration: none;
 }
+body.no-scroll{
+  overflow: hidden;
+}
 
 $cta: #6cd689;
 $cta-hover: #99e3ad;
@@ -100,6 +103,23 @@ hr {
 }
 .opacity-none {
   opacity: 0;
+}
+
+.btn-contact {
+  position: fixed;
+  bottom: 0;
+  left: 2%;
+  right: 2%;
+  background: #87f1a1;
+border-radius: 15px 15px 0 0;
+  a {
+    font-family: "Noi Grotesk Trial", Helvetica, sans-serif;
+    padding: 0.5rem 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
 }
 
 @media (min-width: 950px) {
